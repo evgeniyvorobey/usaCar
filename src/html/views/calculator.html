@@ -1,0 +1,126 @@
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+
+<main>
+    <div class="top-containet-bg-img calculator-bg">
+        <h2>Мы предлагаем лучшие условия по доставке авто в Украину!</h2>
+    </div>
+    <div class="center-block">
+        <div class="customs">
+            <div class="info-block">
+                <h2>Растаможка</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
+                </p>
+            </div>
+            <div class="calculator-block">
+                <div class="result">
+                    <p>
+                        Стоимость вашей доставки составляет
+                        <span>3 299 $</span>
+                    </p>
+                    <button class="agree">Ok</button>
+                </div>
+                <div class="form" >
+                    <div class="input-container">
+                        <label for="">Год</label>
+                        <input type="text" placeholder="Например 2016" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="">Обьем</label>
+                        <input type="text" placeholder="Например 2.0" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="">Стоимиость в $ США</label>
+                        <input type="text" placeholder="9 000 $" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="">Вид топлива</label>
+                        <select name="" id="" required>
+                            <option value=""></option>
+                            <option value="1">Бензин</option>
+                            <option value="2">Дизел</option>
+                            <option value=3>Электро</option>
+                        </select>
+                    </div>
+                    <button class="count">Расчитать</button>
+                    <div class=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery">
+            <div class="info-block">
+                <h2>Доставка</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
+
+                </p>
+            </div>
+            <div class="calculator-block">
+                <div class="result">
+                    <p>
+                        Стоимость вашей доставки составляет
+                        <span>2 639 $</span>
+                    </p>
+                    <button class="agree">Ok</button>
+                </div>
+                <div class="form" >
+                    <div class="input-container">
+                        <label for="">Город</label>
+                        <select name="" id="" required>
+                            <option value=""></option>
+                            <option value="1">LA</option>
+                            <option value="2">NY</option>
+                            <option value="3">Dalas</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="">Тип</label>
+                        <select name="" id="" required>
+                            <option value=""></option>
+                            <option value="1">Легковое авто</option>
+                            <option value="2">Джип</option>
+                            <option value="3">Мотоцикл</option>
+                            <option value="4">Катер</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="">Стоимиость</label>
+                        <input type="text" placeholder="9 000 $" required>
+                    </div>
+                    <button class="count">Расчитать</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center-block">
+        <div class="callback-block">
+            <div class="thnx">
+                <p>
+                    Спасидо за доверие наш менеджер свяжется с вами в ближайшее время.
+                </p>
+            </div>
+            <h3>Появились вопросы?</h3>
+            <h4>Оставьте ваш номер и мы перезвоним вам!</h4>
+            <div name="CallBack" action="">
+                <div class="input-container">
+                    <label for="name-callback-form">Имя</label>
+                    <input id="name-callback-form" type="name">
+                </div>
+                <div class="input-container">
+                    <label for="tel-callback-form">Телефон</label>
+                    <input id="tel-callback-form" placeholder="" type="tel">
+                </div>
+                <button class="thnx-button">Отправить</button>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
