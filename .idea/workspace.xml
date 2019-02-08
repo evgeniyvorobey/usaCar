@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8944160-7bf6-4aa8-a1b9-c81cbc8c3225" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/html/views/cars.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/views/cars.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/views/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/views/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/views/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/views/contacts.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/html/views/cars.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/html/views/calculator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="73" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="73" />
+            <state relative-caret-position="148">
+              <caret line="111" column="73" selection-start-line="111" selection-start-column="73" selection-end-line="111" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -50,17 +50,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/html/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="175" column="76" selection-start-line="175" selection-start-column="76" selection-end-line="175" selection-end-column="76" />
+            <state relative-caret-position="208">
+              <caret line="179" column="80" selection-start-line="179" selection-start-column="54" selection-end-line="179" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/html/views/contacts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="33" />
+            <state relative-caret-position="207">
+              <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -124,13 +124,13 @@
         <option value="$PROJECT_DIR$/dist/js/bundle.js" />
         <option value="$PROJECT_DIR$/src/js/additions/send.js" />
         <option value="$PROJECT_DIR$/src/html/includes/footer.html" />
-        <option value="$PROJECT_DIR$/src/html/views/contacts.html" />
         <option value="$PROJECT_DIR$/src/html/includes/header.html" />
         <option value="$PROJECT_DIR$/src/scss/style.scss" />
-        <option value="$PROJECT_DIR$/src/html/views/calculator.html" />
         <option value="$PROJECT_DIR$/src/html/views/index.html" />
         <option value="$PROJECT_DIR$/src/js/index.js" />
         <option value="$PROJECT_DIR$/src/html/views/cars.html" />
+        <option value="$PROJECT_DIR$/src/html/views/calculator.html" />
+        <option value="$PROJECT_DIR$/src/html/views/contacts.html" />
       </list>
     </option>
   </component>
@@ -230,12 +230,12 @@
       <workItem from="1549389465724" duration="1011000" />
       <workItem from="1549617466560" duration="1707000" />
       <workItem from="1549619184033" duration="62000" />
-      <workItem from="1549619250298" duration="16773000" />
+      <workItem from="1549619250298" duration="16892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20087000" />
+    <option name="totallyTimeSpent" value="20206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="980" extended-state="6" />
@@ -358,27 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/html/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="175" column="76" selection-start-line="175" selection-start-column="76" selection-end-line="175" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/html/views/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/html/views/calculator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="73" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/html/views/cars.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -386,6 +365,27 @@
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/views/calculator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="111" column="73" selection-start-line="111" selection-start-column="73" selection-end-line="111" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="179" column="80" selection-start-line="179" selection-start-column="54" selection-end-line="179" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/views/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
         </state>
       </provider>
     </entry>
