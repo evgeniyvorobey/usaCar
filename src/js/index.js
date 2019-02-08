@@ -185,7 +185,7 @@ if( document.querySelector('form.send-data')){
             this.classList.add('active');
             setTimeout(function () {
                 document.querySelector('.callback-block').classList.remove('active');
-            },3000);
+            },4000);
             sendData(this)
         }
 
