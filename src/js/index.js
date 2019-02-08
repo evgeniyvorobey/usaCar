@@ -1,17 +1,3 @@
-
-
-// document.addEventListener('scroll', function() {
-//     var vievportHeight = window.innerHeight;
-//     var allContentBlock = document.querySelectorAll('.content-block');
-//     var el = allContentBlock[allContentBlock.length - 1];
-//     var el = el.getBoundingClientRect();
-
-//     if (el.top <= vievportHeight ) {
-//         document.querySelector('main').classList.add('green');
-//     }else{
-//         document.querySelector('main').classList.remove('green');
-//     }
-// })
 if (document.querySelector('.our-services-item')){
     document.querySelectorAll('.our-services-item').forEach(item => {
         var vievportHeight = window.innerHeight;
@@ -31,23 +17,6 @@ if (document.querySelector('.our-services-item')){
 
 document.addEventListener('scroll', function () {
     var vievportHeight = window.innerHeight;
-    // var el = document.querySelectorAll('.car-container');
-    // var firstEl = el[0].getBoundingClientRect();
-    // var secondEl = el[1].getBoundingClientRect();
-    //
-    //
-    // if (firstEl.top <= (vievportHeight - 100) ) {
-    //     el[0].classList.add('active')
-    //     // console.log(el[1].getBoundingClientRect())
-    // }else{
-    //     el[0].classList.remove('active')
-    // }
-    // if (secondEl.top <= (vievportHeight - 100) ) {
-    //     el[1].classList.add('active')
-    // }else{
-    //     el[1].classList.remove('active')
-    // }
-
 
     if (window.scrollY > 110) {
         document.querySelector('header').classList.add('fix-header');
@@ -79,19 +48,19 @@ if(document.querySelector('.our-services-item')){
 
 
 
-var swiper = new Swiper('.swiper-container', {
-    pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-        clickable: true
-    },
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-    },
-    speed: 400,
-    spaceBetween: 100
-});
+// var swiper = new Swiper('.swiper-container', {
+//     pagination: {
+//         el: '.swiper-pagination',
+//         dynamicBullets: true,
+//         clickable: true
+//     },
+//     autoplay: {
+//         delay: 3500,
+//         disableOnInteraction: false,
+//     },
+//     speed: 400,
+//     spaceBetween: 100
+// });
 foggingOn = () => document.querySelector('.fogging').classList.add('active');
 foggingOff = () => document.querySelector('.fogging').classList.remove('active');
 
@@ -143,15 +112,83 @@ if (document.querySelector('.count')){
         })
     })
 }
-if(document.querySelector('.thnx-button')){
-    document.querySelectorAll('.thnx-button').forEach(item => {
-        item.addEventListener('click', function () {
-            this.parentNode.parentNode.classList.add('active');
+// if(document.querySelector('.thnx-button')){
+//     document.querySelectorAll('.thnx-button').forEach(item => {
+//         item.addEventListener('click', function () {
+//             this.parentNode.parentNode.classList.add('active');
+//             setTimeout(function () {
+//                 document.querySelector('.callback-block').classList.remove('active');
+//             },3000)
+//
+//         })
+//     })
+//
+// }
+
+// отправка данных с формы
+function sendData(item) {
+
+    // var data = new URLSearchParams(new FormData(item)).toString()
+    var name = item.querySelector('#name-callback-form').value;
+    var phone = item.querySelector('#tel-callback-form').value;
+
+    var option = {
+        method: 'POST',
+        headers: {
+            "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+        },
+        body: 'firstname='+name+'&phone='+phone+''
+    };
+
+    fetch('../php/send.php', option)
+        .then(response => {
+            if (response.ok){
+                console.log('Do something')
+            }
+        })
+}
+
+if( document.querySelector('form.send-data')){
+    document.querySelector('form.send-data').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = this.querySelector('#name-callback-form');
+        var phone = this.querySelector('#tel-callback-form');
+        var nameOk = false;
+        var phoneOk = false;
+        var phoneno = /^(\([0-9]{3}\)\s*|[0-9]{3}\-)[0-9]{3}-[0-9]{4}$/;
+        console.log(phone.value.match(phoneno))
+
+        if (name.value.length < 2 ){
+            name.value = '';
+            name.setAttribute('placeholder','Введите имя');
+            name.parentNode.classList.add('false')
+            console.log('enter valid name');
+        } else {
+            name.parentNode.classList.remove('false')
+            nameOk = true;
+        }
+
+        if (phone.value.match(phoneno) === null){
+            phone.value = '';
+            phone.setAttribute('placeholder', 'Введите номер 123-456-7890')
+            phone.parentNode.classList.add('false')
+            console.log('enter valid number');
+
+        } else {
+            phone.parentNode.classList.remove('false')
+            phoneOk = true;
+        }
+
+
+        console.log(nameOk, phoneOk)
+        if ( nameOk == true && phoneOk == true ){
+            this.classList.add('active');
             setTimeout(function () {
                 document.querySelector('.callback-block').classList.remove('active');
-            },3000)
+            },3000);
+            sendData(this)
+        }
 
-        })
     })
-
 }
+
