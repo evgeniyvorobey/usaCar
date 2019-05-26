@@ -1,0 +1,761 @@
+﻿[
+    {
+        "DESTINATION (IAAI)": "AK-ANCHORAGE",
+        "NJ": "2400",
+        "CA": "1900"
+    },
+    {
+        "DESTINATION (IAAI)": "AL-Birmingham",
+        "NJ": "480",
+        "GA": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "AL-Dothan",
+        "NJ": "650",
+        "GA": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "AL-Huntsville",
+        "NJ": "650",
+        "GA": "400"
+    },
+    {
+        "DESTINATION (IAAI)": "AR-Fayetteville",
+        "NJ": "580",
+        "TX": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "AR-Little Rock",
+        "NJ": "580",
+        "TX": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "AZ-Phoenix",
+        "NJ": "870",
+        "CA": "260"
+    },
+    {
+        "DESTINATION (IAAI)": "AZ-Tucson",
+        "NJ": "870",
+        "CA": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-Anaheim",
+        "NJ": "950",
+        "CA": "130"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-Colton",
+        "NJ": "950",
+        "CA": "160"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-East Bay",
+        "NJ": "950",
+        "CA": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-Fontana",
+        "NJ": "950",
+        "CA": "130"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-Fremont",
+        "NJ": "950",
+        "CA": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-Frenso",
+        "NJ": "950",
+        "CA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-High Desert",
+        "NJ": "950",
+        "CA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-Los Angeles",
+        "NJ": "950",
+        "CA": "120"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-North Hollywood",
+        "NJ": "950",
+        "CA": "130"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-Sacramento",
+        "NJ": "950",
+        "CA": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "CA-San Diego",
+        "NJ": "950",
+        "CA": "175"
+    },
+    {
+        "DESTINATION (IAAI)": "CO-Denver",
+        "NJ": "700",
+        "CA": "500",
+        "TX": "460"
+    },
+    {
+        "DESTINATION (IAAI)": "CO-Denver East",
+        "NJ": "700",
+        "CA": "460",
+        "TX": "460"
+    },
+    {
+        "DESTINATION (IAAI)": "CO-Western Colorado",
+        "NJ": "900",
+        "CA": "600",
+        "TX": "1000"
+    },
+    {
+        "DESTINATION (IAAI)": "CT-Hartford",
+        "NJ": "175"
+    },
+    {
+        "DESTINATION (IAAI)": "CT-Hartford-South",
+        "NJ": "175"
+    },
+    {
+        "DESTINATION (IAAI)": "DE-New Castle",
+        "NJ": "210"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Clearwater",
+        "NJ": "500",
+        "GA": "200",
+        "FL": "150"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Fort Myers",
+        "NJ": "490",
+        "GA": "180",
+        "FL": "180"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Fort Pierce",
+        "NJ": "500",
+        "GA": "175",
+        "FL": "175"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Jacksonville",
+        "NJ": "480",
+        "GA": "150",
+        "FL": "175"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Miami",
+        "NJ": "480",
+        "GA": "250",
+        "FL": "120"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Miami-North",
+        "NJ": "480",
+        "GA": "200",
+        "FL": "120"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Orlando",
+        "NJ": "500",
+        "GA": "175",
+        "FL": "175"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Orlando-North",
+        "NJ": "490",
+        "GA": "175",
+        "FL": "175"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Pensacola",
+        "NJ": "690",
+        "GA": "375",
+        "FL": "375"
+    },
+    {
+        "DESTINATION (IAAI)": "FL-Tampa",
+        "NJ": "520",
+        "GA": "225",
+        "FL": "225"
+    },
+    {
+        "DESTINATION (IAAI)": "GA-Atlanta",
+        "NJ": "420",
+        "GA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "GA-Atlanta East",
+        "NJ": "450",
+        "GA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "GA-Atlanta North",
+        "NJ": "450",
+        "GA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "GA-Atlanta South",
+        "NJ": "400",
+        "GA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "GA-Macon",
+        "NJ": "450",
+        "GA": "150"
+    },
+    {
+        "DESTINATION (IAAI)": "GA-Savannah",
+        "NJ": "420",
+        "GA": "120"
+    },
+    {
+        "DESTINATION (IAAI)": "GA-Tifton",
+        "NJ": "500",
+        "GA": "150"
+    },
+    {
+        "DESTINATION (IAAI)": "HI-HONOLULU",
+        "NJ": "2450",
+        "GA": "1700"
+    },
+    {
+        "DESTINATION (IAAI)": "IA-Davenport",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "IA-Des Moines",
+        "NJ": "570"
+    },
+    {
+        "DESTINATION (IAAI)": "ID-Boise",
+        "NJ": "1050",
+        "CA": "520"
+    },
+    {
+        "DESTINATION (IAAI)": "IL-Chicago-North",
+        "NJ": "420"
+    },
+    {
+        "DESTINATION (IAAI)": "IL-Chicago-South",
+        "NJ": "420"
+    },
+    {
+        "DESTINATION (IAAI)": "IL-Chicago-West",
+        "NJ": "440"
+    },
+    {
+        "DESTINATION (IAAI)": "IL-Lincoln",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "IL-Specialty Division",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "IL-St. Louis",
+        "NJ": "440"
+    },
+    {
+        "DESTINATION (IAAI)": "IN-Indianapolis",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "IN-South Bend",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "KS-Kansas City",
+        "NJ": "575",
+        "TX": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "KS-Wichita",
+        "NJ": "575",
+        "TX": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "KY-Ashland",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "KY-Bowling Green",
+        "NJ": "550",
+        "GA": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "KY-Louisville",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "KY-Louisville Nort",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "KY-Paducah",
+        "NJ": "700"
+    },
+    {
+        "DESTINATION (IAAI)": "LA-Baton Rouge",
+        "NJ": "580",
+        "GA": "530",
+        "TX": "310"
+    },
+    {
+        "DESTINATION (IAAI)": "LA-Lafayette",
+        "NJ": "580",
+        "TX": "310"
+    },
+    {
+        "DESTINATION (IAAI)": "LA-New Orleans",
+        "NJ": "580",
+        "GA": "530",
+        "TX": "310"
+    },
+    {
+        "DESTINATION (IAAI)": "LA-New Orleans East",
+        "NJ": "580",
+        "GA": "530",
+        "TX": "310"
+    },
+    {
+        "DESTINATION (IAAI)": "LA-Shreveport",
+        "NJ": "575",
+        "GA": "530",
+        "TX": "310"
+    },
+    {
+        "DESTINATION (IAAI)": "MA-Boston-Shirley",
+        "NJ": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "MA-Taunton",
+        "NJ": "230"
+    },
+    {
+        "DESTINATION (IAAI)": "MD-Baltimore",
+        "NJ": "220"
+    },
+    {
+        "DESTINATION (IAAI)": "MD-Laurel",
+        "NJ": "225"
+    },
+    {
+        "DESTINATION (IAAI)": "MD-Metro DC",
+        "NJ": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "MD-Rosedale",
+        "NJ": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "ME-Portand-Gorham",
+        "NJ": "360"
+    },
+    {
+        "DESTINATION (IAAI)": "MI-Detroit",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "MI-Grand Rapids",
+        "NJ": "500"
+    },
+    {
+        "DESTINATION (IAAI)": "MI-Great Lakes",
+        "NJ": "530"
+    },
+    {
+        "DESTINATION (IAAI)": "MN-Minneapolis/St.Paul",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "MO-Springfield",
+        "NJ": "580",
+        "TX": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "MS-Grenada",
+        "NJ": "800",
+        "TX": "425"
+    },
+    {
+        "DESTINATION (IAAI)": "MS-Gulf Coast",
+        "NJ": "800",
+        "TX": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "MS-Jackson",
+        "NJ": "800",
+        "TX": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "MT-Billings",
+        "NJ": "1000",
+        "CA": "700"
+    },
+    {
+        "DESTINATION (IAAI)": "MT-Missoula",
+        "NJ": "950",
+        "CA": "675"
+    },
+    {
+        "DESTINATION (IAAI)": "NC-Asheville",
+        "NJ": "320",
+        "GA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "NC-Charlotte",
+        "NJ": "350",
+        "GA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "NC-Concord",
+        "NJ": "300",
+        "GA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "NC-Greensboro",
+        "NJ": "350",
+        "GA": "225"
+    },
+    {
+        "DESTINATION (IAAI)": "NC-Raleigh",
+        "NJ": "310",
+        "GA": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "NC-Wilmington",
+        "NJ": "300",
+        "GA": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "ND-Fargo",
+        "NJ": "800"
+    },
+    {
+        "DESTINATION (IAAI)": "NE-Omaha",
+        "NJ": "800"
+    },
+    {
+        "DESTINATION (IAAI)": "NH-Manchester",
+        "NJ": "280"
+    },
+    {
+        "DESTINATION (IAAI)": "NJ-Avenel New Jersey",
+        "NJ": "125"
+    },
+    {
+        "DESTINATION (IAAI)": "NM-Albuquerque",
+        "NJ": "850",
+        "CA": "450",
+        "TX": "570"
+    },
+    {
+        "DESTINATION (IAAI)": "NV-Las Vegas",
+        "NJ": "950",
+        "CA": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "NV-Reno",
+        "NJ": "950",
+        "CA": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "NY-Albany",
+        "NJ": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "NY-Buffalo",
+        "NJ": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "NY-Long Island",
+        "NJ": "175"
+    },
+    {
+        "DESTINATION (IAAI)": "NY-Newburgh",
+        "NJ": "150"
+    },
+    {
+        "DESTINATION (IAAI)": "NY-Rochester",
+        "NJ": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "NY-Syracuse",
+        "NJ": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "OH-Akron-Canton",
+        "NJ": "380"
+    },
+    {
+        "DESTINATION (IAAI)": "OH-Cincinnati",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "OH-Cincinnati South",
+        "NJ": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "OH-Cleveland",
+        "NJ": "420"
+    },
+    {
+        "DESTINATION (IAAI)": "OH-Colombus",
+        "NJ": "410"
+    },
+    {
+        "DESTINATION (IAAI)": "OH-Dayton",
+        "NJ": "425"
+    },
+    {
+        "DESTINATION (IAAI)": "OK-Oklahoma City",
+        "NJ": "560",
+        "TX": "340"
+    },
+    {
+        "DESTINATION (IAAI)": "OK-Tulsa",
+        "NJ": "540",
+        "TX": "400"
+    },
+    {
+        "DESTINATION (IAAI)": "OP-Portland West",
+        "NJ": "950",
+        "CA": "420"
+    },
+    {
+        "DESTINATION (IAAI)": "OR-Eugene",
+        "NJ": "950",
+        "CA": "440"
+    },
+    {
+        "DESTINATION (IAAI)": "OR-Portland",
+        "NJ": "950",
+        "CA": "420"
+    },
+    {
+        "DESTINATION (IAAI)": "PA-Altoona",
+        "NJ": "280"
+    },
+    {
+        "DESTINATION (IAAI)": "PA-Bridgeport",
+        "NJ": "170"
+    },
+    {
+        "DESTINATION (IAAI)": "PA-Erie",
+        "NJ": "400"
+    },
+    {
+        "DESTINATION (IAAI)": "PA-Philadelphia",
+        "NJ": "130"
+    },
+    {
+        "DESTINATION (IAAI)": "PA-Pittsburgh",
+        "NJ": "320"
+    },
+    {
+        "DESTINATION (IAAI)": "PA-Pittsburgh-North",
+        "NJ": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "PA-Scranton",
+        "NJ": "225"
+    },
+    {
+        "DESTINATION (IAAI)": "PA-York Springs",
+        "NJ": "225"
+    },
+    {
+        "DESTINATION (IAAI)": "RI-Providence",
+        "NJ": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "SC-Charleston",
+        "NJ": "450",
+        "GA": "150"
+    },
+    {
+        "DESTINATION (IAAI)": "SC-Columbia",
+        "NJ": "460",
+        "GA": "160"
+    },
+    {
+        "DESTINATION (IAAI)": "SC-Greenville",
+        "NJ": "450",
+        "GA": "150"
+    },
+    {
+        "DESTINATION (IAAI)": "SD-Sioux Falls",
+        "NJ": "850"
+    },
+    {
+        "DESTINATION (IAAI)": "TN-Chattanooga",
+        "NJ": "480",
+        "GA": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "TN-Knoxville",
+        "NJ": "420",
+        "GA": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "TN-Memphis",
+        "NJ": "470",
+        "GA": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "TN-Nashville",
+        "NJ": "440",
+        "GA": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Abilene",
+        "NJ": "850",
+        "TX": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Amarillo",
+        "NJ": "850",
+        "TX": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Austin",
+        "NJ": "850",
+        "TX": "270"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Corpus Christi",
+        "NJ": "850",
+        "TX": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Dallas/Ft. Worth",
+        "NJ": "850",
+        "TX": "270"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-El Paso",
+        "NJ": "950",
+        "TX": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Houston",
+        "NJ": "850",
+        "TX": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Houston-North",
+        "NJ": "850",
+        "TX": "200"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Longview",
+        "NJ": "850",
+        "TX": "280"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Lubbock",
+        "NJ": "850",
+        "TX": "400"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-McAllen",
+        "NJ": "850",
+        "TX": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Permian Basin",
+        "NJ": "900",
+        "TX": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-San Antonio-South",
+        "NJ": "850",
+        "TX": "270"
+    },
+    {
+        "DESTINATION (IAAI)": "TX-Dallas",
+        "NJ": "850",
+        "TX": "250"
+    },
+    {
+        "DESTINATION (IAAI)": "UT-Salt Lake City",
+        "NJ": "980",
+        "CA": "450"
+    },
+    {
+        "DESTINATION (IAAI)": "VA-Culpeper",
+        "NJ": "300",
+        "CA": "CA",
+        "GA": "GA",
+        "TX": "TX",
+        "FL": "FL"
+    },
+    {
+        "DESTINATION (IAAI)": "VA-Culpeper"
+    },
+    {
+        "DESTINATION (IAAI)": "VA-Northern Virginia",
+        "NJ": "300"
+    },
+    {
+        "DESTINATION (IAAI)": "VA-Pulaski",
+        "NJ": "325"
+    },
+    {
+        "DESTINATION (IAAI)": "VA-Richmond",
+        "NJ": "280"
+    },
+    {
+        "DESTINATION (IAAI)": "VA-Suffolk",
+        "NJ": "340"
+    },
+    {
+        "DESTINATION (IAAI)": "VA-Tidewater",
+        "NJ": "320"
+    },
+    {
+        "DESTINATION (IAAI)": "VT-Burlington",
+        "NJ": "350"
+    },
+    {
+        "DESTINATION (IAAI)": "WA-Seattle",
+        "NJ": "950",
+        "CA": "520"
+    },
+    {
+        "DESTINATION (IAAI)": "WA-Seattle South",
+        "NJ": "950",
+        "CA": "600"
+    },
+    {
+        "DESTINATION (IAAI)": "WA-Spokane",
+        "NJ": "950",
+        "CA": "600"
+    },
+    {
+        "DESTINATION (IAAI)": "WI-Appleton",
+        "NJ": "580"
+    },
+    {
+        "DESTINATION (IAAI)": "WI-Milwaukee",
+        "NJ": "520"
+    },
+    {
+        "DESTINATION (IAAI)": "WI-Portage",
+        "NJ": "530"
+    },
+    {
+        "DESTINATION (IAAI)": "WV-Buckhannon",
+        "NJ": "480"
+    },
+    {
+        "DESTINATION (IAAI)": "WV-Shady Spring",
+        "NJ": "450"
+    }
+]

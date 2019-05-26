@@ -24,6 +24,7 @@ module.exports = {
     entry: [
         './src/js/index.js',
         './src/scss/style.scss'
+        
     ],
     output: {
         filename: './js/bundle.js'
@@ -121,6 +122,10 @@ module.exports = {
             {
                 from: './src/php',
                 to: './php'
+            },
+            {
+                from: './src/json',
+                to: './json'
             }
         ]),
     ].concat(htmlPlugins)

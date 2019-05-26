@@ -8,24 +8,24 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/swiper.min.css">
-  <title>usaCar</title>
+  <title>Покупка и доставка автомобиля из США – это легко и просто. Многие жители Украины, несмотря на насыщенность автомобильного рынка, предпочитают приобретать машины из США. Авто из Америки пользуются большим спросом в СНГ. Поэтому мы предоставляет Вам возможность приобрести автомобиль с аукционов США на выгодных условиях. Звоните и мы Вам сможем помочь!</title>
 </head>
 
-<body>
+<body id="top">
   <header>
     <div class="fogging"></div>
     <div class="center-block">
       <nav class="navigation-panel">
         <ul class="header-list">
-          <li class="header-list-item logo"><a href="/" class="header-list-link">
+          <li class="header-list-item logo"><a href="#top" class="header-list-link">
               <img src="img/logo.svg" alt="">
             </a></li>
         </ul>
         <ul class="header-list">
-          <li class="header-list-item"><a href="calculator.html" class="header-list-link">Калькулятор</a></li>
-          <li class="header-list-item"><a href="cars.html" class="header-list-link">Авто</a></li>
-          <!--<li class="header-list-item"><a href="#" class="header-list-link">Растаможка</a></li>-->
-          <li class="header-list-item"><a href="contacts.html" class="header-list-link">Контакты</a></li>
+          <li class="header-list-item"><a href="#cars" class="header-list-link">Авто</a></li>
+          <li class="header-list-item"><a href="#delivery" class="header-list-link">Доставка</a></li>
+          <li class="header-list-item"><a href="#calculator" class="header-list-link">Калькулятор</a></li>
+          <li class="header-list-item"><a href="#contacts" class="header-list-link">Контакты</a></li>
         </ul>
         <button class="hamburger">
           <span></span><span></span><span></span>
@@ -45,42 +45,59 @@
         <div class="info-block">
           <h2>Растаможка</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
+            Чтобы расстаможить подержанное авто из США в Украине, необходимо подготовить пакет документов:
 
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
+            оригинал технического паспорта транспортного средства;
+            справки и чеки, подтверждающие покупку;
+            транспортую накладную (домашний и линейный коносамент, пропечатанный таможней);
+            наряд на расформирование;
+            чек со стоимостью транспортировки;
+            гражданский паспорт и ИНН код нового владельца.
           </p>
         </div>
         <div class="calculator-block">
-          <div class="result">
+          <div class="result fee-result">
             <p>
-              Стоимость вашей доставки составляет
-              <span>3 299 $</span>
+              <span>Акциз</span>
+              <span class="excise"></span>
+            </p>
+            <p>
+              <span>Пошлина</span>
+              <span class="fee"></span>
+            </p>
+            <p>
+              <span>НДС</span>
+              <span class="nds"></span>
+            </p>
+            <p>
+              <span>Общая сумма</span>
+              <span class="all-fee"></span>
             </p>
             <button class="agree">Ok</button>
           </div>
-          <div class="form">
+          <div class="form ">
             <div class="input-container">
-              <label for="">Год</label>
-              <input type="text" placeholder="Например 2016" required>
+              <label for="year">Год</label>
+              <input if-false="Заполните поле" id="year" type="number" placeholder="Например 2016" required>
             </div>
             <div class="input-container">
-              <label for="">Обьем</label>
-              <input type="text" placeholder="Например 2.0" required>
+              <label for="engineСapacity">Обьем</label>
+              <input if-false="Заполните поле" id="engineСapacity" type="number" placeholder="Например 2.0" required>
             </div>
             <div class="input-container">
-              <label for="">Стоимиость в $ США</label>
-              <input type="text" placeholder="9 000 $" required>
+              <label for="price">Стоимиость в $ США</label>
+              <input if-false="Заполните поле" type="number" id="price" placeholder="9 000 $" required>
             </div>
             <div class="input-container">
-              <label for="">Вид топлива</label>
-              <select name="" id="" required>
-                <option value=""></option>
-                <option value="1">Бензин</option>
-                <option value="2">Дизел</option>
-                <option value=3>Электро</option>
+              <label for="fuel">Вид топлива</label>
+              <select if-false="Заполните поле" name="fuel" id="fuel" required>
+                <option value="000"></option>
+                <option value="50">Бензин</option>
+                <option value="75">Дизель</option>
+                <option value=0>Электро</option>
               </select>
             </div>
-            <button class="count">Расчитать</button>
+            <button class="count tax">Расчитать</button>
             <div class=""></div>
           </div>
         </div>
@@ -89,9 +106,8 @@
         <div class="info-block">
           <h2>Доставка</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
-
+            Наша компания предлагает свои услуги по доставке автомобилей с аукционов США в Украину. Мы возьмем на себя подготовку всех необходимых документов, выстроим логистику, организуем транспортировку по Америке и в порт Одессы.
+            По времени данные работы, с даты приобретения техники на аукционе и до ее передачи заказчику, занимают 6-8 недель. После отгрузки заказчику предоставляется VIN-код автомобиля, позволяющий отслеживать его местонахождение в режиме реального времени.
           </p>
         </div>
         <div class="calculator-block">
@@ -102,32 +118,35 @@
             </p>
             <button class="agree">Ok</button>
           </div>
-          <div class="form">
+          <div>
+            <div class="input-container">
+              <label for="">Аукцион</label>
+              <select id="delivery-from-auction" required>
+                <option value="000">Выбрать город</option>
+                <option value="COPART NJ">COPART NJ</option>
+                <option value="COPART CA">COPART CA</option>
+                <option value="COPART GA">COPART GA</option>
+                <option value="COPART TX">COPART TX</option>
+                <option value="COPART FL">COPART FL</option>
+                <option value="MANHEIM NJ">MANHEIM NJ</option>
+                <option value="MANHEIM CA">MANHEIM CA</option>
+                <option value="MANHEIM GA">MANHEIM GA</option>
+                <option value="MANHEIM TX">MANHEIM TX</option>
+                <option value="MANHEIM FL">MANHEIM FL</option>
+                <option value="IAAI NJ">IAAI NJ</option>
+                <option value="IAAI CA">IAAI CA</option>
+                <option value="IAAI GA">IAAI GA</option>
+                <option value="IAAI TX">IAAI TX</option>
+                <option value="IAAI FL">IAAI FL</option>
+              </select>
+            </div>
             <div class="input-container">
               <label for="">Город</label>
-              <select name="" id="" required>
-                <option value=""></option>
-                <option value="1">LA</option>
-                <option value="2">NY</option>
-                <option value="3">Dalas</option>
+              <select name="" id="delivery-from-city" required>
+                <option value="000">Выбрать город</option>
               </select>
             </div>
-            <div class="input-container">
-              <label for="">Тип</label>
-              <select name="" id="" required>
-                <option value=""></option>
-                <option value="1">Легковое авто</option>
-                <option value="2">Джип</option>
-                <option value="3">Мотоцикл</option>
-                <option value="4">Катер</option>
-              </select>
-            </div>
-            <div class="input-container">
-              <label for="">Стоимиость</label>
-              <input type="text" placeholder="9 000 $" required>
-            </div>
-            <button class="count">Расчитать</button>
-
+            <button class="count delivery">Расчитать</button>
           </div>
         </div>
       </div>
@@ -158,28 +177,42 @@
 
   </main>
 
-  <footer>
-    <div class="center-block">
-      <nav>
-        <ul class="footer-list">
-          <li class="footer-list-item logo"><a href="" class="footert-link">
-              <img src="img/logo.svg" alt="">
-            </a></li>
-        </ul>
-        <ul class="footer-list">
-          <li class="footer-list-item"><a href="" class="footert-link">Калькулятор</a></li>
-          <li class="footer-list-item"><a href="" class="footert-link">Доставка</a></li>
-          <li class="footer-list-item"><a href="" class="footert-link">Растаможка</a></li>
-        </ul>
-        <ul class="footer-list footer-contacts">
-          <li class="footer-list-item">Контакты</li>
-          <li class="footer-list-item"><a href="tel:380123456789" class="footert-link">Тел: 38 (098) 087 345 27</a></li>
-        </ul>
-      </nav>
-    </div>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="facebook" viewBox="0 0 512 512">
+      <title>facebook</title>
+      <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64 C512,28.704,483.296,0,448,0z" />
+      <path style="fill:#FAFAFA;" d="M432,256h-80v-64c0-17.664,14.336-16,32-16h32V96h-64l0,0c-53.024,0-96,42.976-96,96v64h-64v80h64 v176h96V336h48L432,256z" />
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 455.73 455.73">
+      <title>instagram</title>
+      <path style="fill:#C536A4;" d="M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33 c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M303.36,108.66 H152.37c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M303.36,108.66 H152.37c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M0,0v455.73h455.73 V0H0z M380.23,303.36c0,42.39-34.48,76.87-76.87,76.87H152.37c-42.39,0-76.87-34.48-76.87-76.87V152.37 c0-42.39,34.48-76.87,76.87-76.87h150.99c42.39,0,76.87,34.48,76.87,76.87V303.36z M303.36,108.66H152.37 c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55 c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33 C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33 c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M303.36,108.66H152.37 c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55 c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33 C273.18,202.88,252.85,182.55,227.86,182.55z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31c0,24.99,20.34,45.33,45.32,45.33 c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z M303.36,108.66H152.37 c-24.1,0-43.71,19.61-43.71,43.71v150.99c0,24.1,19.61,43.71,43.71,43.71h150.99c24.1,0,43.71-19.61,43.71-43.71V152.37 C347.07,128.27,327.46,108.66,303.36,108.66z M227.86,306.35c-43.27,0-78.48-35.21-78.48-78.49c0-43.27,35.21-78.48,78.48-78.48 c43.28,0,78.49,35.21,78.49,78.48C306.35,271.14,271.14,306.35,227.86,306.35z M308.87,165.61c-10.24,0-18.57-8.33-18.57-18.57 s8.33-18.57,18.57-18.57s18.57,8.33,18.57,18.57S319.11,165.61,308.87,165.61z M227.86,182.55c-24.98,0-45.32,20.33-45.32,45.31 c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,252.85,182.55,227.86,182.55z" />
+    </symbol>
+  </svg>
 
-  </footer>
+  <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement('script');
+      s.src = 'https://usacar.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  <script id="dsq-count-scr" src="//usacar.disqus.com/count.js" async></script>
   <script src="js/additions/swiper.min.js"></script>
+  <script src="js/additions/anchorCrossing.js"></script>
+  <script src="js/additions/sendFromForm.js"></script>
   <script src="js/bundle.js"></script>
 </body>
 

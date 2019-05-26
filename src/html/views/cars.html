@@ -3,7 +3,7 @@
     <div class="top-containet-bg-img calculator-bg">
         <h2>Автомобили которые уже нашли своих владельцев</h2>
     </div>
-    <div class="center-block">
+    <!-- <div class="center-block">
         <div class="car-catalog-list">
             <div class="car-item">
                 <div class="top-img-block">
@@ -36,6 +36,12 @@
                         <span>2017</span>
                     </p>
 
+                </div>
+                <div class="status-delivery">
+                    <div class="progress-bar"></div>
+                    <div class="status-item active"><span class="status-name">Куплена</span></div>
+                    <div class="status-item"><span class="status-name">В дороге</span></div>
+                    <div class="status-item"><span class="status-name">Доставлено</span></div>
                 </div>
             </div>
             <div class="car-item">
@@ -70,10 +76,16 @@
                     </p>
 
                 </div>
+                <div class="status-delivery">
+                    <div class="progress-bar"></div>
+                    <div class="status-item active"><span class="status-name">Куплена</span></div>
+                    <div class="status-item active"><span class="status-name">В дороге</span></div>
+                    <div class="status-item"><span class="status-name">Доставлено</span></div>
+                </div>
             </div>
             <div class="car-item">
                 <div class="top-img-block">
-                    <span class="item-price">27,880</span>
+                    <span class="item-price">27,880 USD</span>
                     <img class="responsive" src="img/cars/3.jpg" alt="">
                 </div>
                 <div class="description-block">
@@ -103,9 +115,74 @@
                     </p>
 
                 </div>
+                <div class="status-delivery">
+                    <div class="progress-bar"></div>
+                    <div class="status-item active"><span class="status-name">Куплена</span></div>
+                    <div class="status-item"><span class="status-name">В дороге</span></div>
+                    <div class="status-item"><span class="status-name">Доставлено</span></div>
+                </div>
+            </div>
+            <div class="car-item">
+                <div class="top-img-block">
+                    <span class="item-price">15,880 USD</span>
+                    <img class="responsive" src="img/cars/4.jpg" alt="">
+                </div>
+                <div class="description-block">
+                    <p>
+                        <span>Топливо:</span>
+                        <span>Електро</span>
+                    </p>
+                    <p>
+                        <span>Объем дигателя:</span>
+                        <span>-</span>
+                    </p>
+                    <p>
+                        <span>Типп КПП:</span>
+                        <span>Автомат</span>
+                    </p>
+                    <p>
+                        <span>Пробег:</span>
+                        <span>1239 км</span>
+                    </p>
+                    <p>
+                        <span>Привод:</span>
+                        <span>Полный</span>
+                    </p>
+                    <p>
+                        <span>Год:</span>
+                        <span>2017</span>
+                    </p>
+
+                </div>
+                <div class="status-delivery">
+                    <div class="progress-bar"></div>
+                    <div class="status-item active"><span class="status-name">Куплена</span></div>
+                    <div class="status-item active"><span class="status-name">В дороге</span></div>
+                    <div class="status-item active"><span class="status-name">Доставлено</span></div>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+        <div id="disqus_thread"></div>
+    </div> -->
 
+    <script>
+
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://usacar.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</main>
 <%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,20 +1,4 @@
-if (document.querySelector('.our-services-item')){
-    document.querySelectorAll('.our-services-item').forEach(item => {
-        var vievportHeight = window.innerHeight;
-        item.addEventListener('scroll', function () {
-            var el = this.getBoundingClientRect();
-            console.log('scroll')
-            if (firstEl.top <= (vievportHeight - 100) ) {
-                el[0].classList.add('active')
-                // console.log(el[1].getBoundingClientRect())
-            }else{
-                el[0].classList.remove('active')
-            }
-        })
-    })
-}
-
-
+//---------TOP MENU WHEN SCROLL--------------//
 document.addEventListener('scroll', function () {
     var vievportHeight = window.innerHeight;
 
@@ -24,60 +8,62 @@ document.addEventListener('scroll', function () {
     } else {
         document.querySelector('header').classList.remove('fix-header');
         document.querySelector('main').classList.remove('when-header-fixed');
-
     }
 
-if(document.querySelector('.our-services-item')){
-    document.querySelectorAll('.our-services-item').forEach(item => {
-        var el = item.getBoundingClientRect();
-        if (el.top <= (vievportHeight - 50) ) {
-            item.classList.add('active')
+    if(document.querySelector('.to-top-button')) {
+        var el = document.querySelector('.to-top-button').getBoundingClientRect();
+        if (window.scrollY > vievportHeight ) {
+            document.querySelector('.to-top-button').classList.add('active')
         }else{
-            item.classList.remove('active')
+            document.querySelector('.to-top-button').classList.remove('active')
         }
+    }
+
+    if(document.querySelector('.our-services-item')){
+        document.querySelectorAll('.our-services-item').forEach(item => {
+            var el = item.getBoundingClientRect();
+            if (el.top <= (vievportHeight - 50) ) {
+                item.classList.add('active')
+            }else{
+                item.classList.remove('active')
+            }
+        })
+    }
+})
+//-----END----TOP MENU WHEN SCROLL--------------//
+
+
+
+
+//---------close hamburger menu and fogging of when click on mrnu button--------//
+
+document.querySelectorAll('.header-list-link').forEach((item) => {
+    item.addEventListener('click', () => {
+            foggingOff();
+            document.querySelector('.navigation-panel').classList.remove('active');
     })
-}
-
-
-
-
-
 })
 
+//------------- ON/OFF fogging--------------//
 
-
-
-
-// var swiper = new Swiper('.swiper-container', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//         dynamicBullets: true,
-//         clickable: true
-//     },
-//     autoplay: {
-//         delay: 3500,
-//         disableOnInteraction: false,
-//     },
-//     speed: 400,
-//     spaceBetween: 100
-// });
 foggingOn = () => document.querySelector('.fogging').classList.add('active');
 foggingOff = () => document.querySelector('.fogging').classList.remove('active');
 
-closeHeaderMenu = () => document.querySelector('.hamburger').classList.remove('active')
+//-------------- close header menu --------//
+
 
 document.querySelector('.fogging').addEventListener('click', function () {
     foggingOff();
     document.querySelector('.navigation-panel').classList.remove('active');
 })
 
-
 document.querySelector('.hamburger').addEventListener('click', function () {
     this.parentNode.classList.toggle('active');
     foggingOn();
-
 })
 
+
+//-------question/answer - block ----------//
 if( document.querySelector('.wy-by-in-usa-item')){
     document.querySelectorAll('.wy-by-in-usa-item span').forEach(item => {
         item.addEventListener('click', function () {
@@ -95,14 +81,126 @@ if( document.querySelector('.wy-by-in-usa-item')){
 
 document.querySelectorAll('.questions').forEach(item => {
     item.addEventListener('click', function() {
-        this.parentNode.classList.toggle('active');
+        if (this.parentNode.classList.contains('active')) {
+            this.parentNode.classList.remove('active')
+        } else {
+            document.querySelectorAll('.questions').forEach(item => {
+                item.parentNode.classList.remove('active');
+            })
+            this.parentNode.classList.toggle('active');
+        }
     })
 })
+
+
+function isEmpty(el) {
+    var val = el.value;
+    if (val === '000') {
+        el.classList.add('not-complete')
+        el.style.border = '1px solid rgba(238,0,20,.76)';
+    } else {
+        el.classList.remove('not-complete')
+        el.style.border = '';
+        return val;
+    }
+}
+
+
+//---------CURRENCY PRIVATBANK---------//
+var currenceExchange = [];
+
+fetch('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')
+    .then(response => {
+
+        response.json().then(function(data) {
+            data.map( item => {
+                currenceExchange.push(item)
+            })
+        });
+    })
+
+//-----END----CURRENCY PRIVATBANK---------//
+
+var date = new Date;
+
+//---------TO NUMBER---------//
+function number(el) {
+    return parseFloat(el)
+}
+//----END-----TO NUMBER---------//
+
+
+function usdToEur( money, usd, eur ) {
+    return money * usd / eur;
+}
+
+function checkEl(el, min, max) {
+    if (el.value.length > min && el.value.length < max ){
+        el.classList.remove('not-complete');
+        el.style.border = '1px solid transparent';
+        return number(el.value)
+    } else {
+        el.classList.add('not-complete')
+        el.style.border = '1px solid rgba(238,0,20,.76)';
+    }
+}
 
 if (document.querySelector('.count')){
     document.querySelectorAll('.count').forEach(item => {
         item.addEventListener('click', function (e) {
-            this.parentNode.parentNode.classList.add('active')
+            if (item.classList.contains('delivery')){
+                var city = this.parentNode.querySelector('#delivery-from-city');
+
+                isEmpty(city);
+
+                if(!this.parentNode.querySelector('.not-complete')){
+                    this.closest('.calculator-block').classList.add('active');
+                    this.closest('.calculator-block').querySelector('p').innerHTML = `Стоимость доставки из аукциона ${auction} составит ${destination[city.value][state]} $`;
+
+                }
+            }
+
+            if (item.classList.contains('tax')){
+
+                var yearVal = checkEl(document.querySelector('#year'), 3, 5);
+                var age = (date.getFullYear() + 1) - yearVal;
+                var engineСapacityVal = checkEl(document.querySelector('#engineСapacity'), 2, 5);
+                var priceVal = checkEl(document.querySelector('#price'), 3, 9);
+                var fuelValue = parseInt(isEmpty(document.querySelector('#fuel')));
+
+
+                if(this.parentNode.querySelector('.not-complete')){
+                    return
+                } else {
+
+                    this.parentNode.parentNode.classList.add('active');
+
+                    var usd = currenceExchange['0']['buy'];
+                    var eur = currenceExchange['1']['buy'];
+                    var currName = currenceExchange['1']['ccy'];
+
+                    priceVal = usdToEur( priceVal, usd, eur )
+
+                    var excisePrice = parseInt(fuelValue * age * engineСapacityVal);
+                    document.querySelector('.excise').innerHTML = `${excisePrice} ${currName}`
+
+                    var fee = parseInt(priceVal / 10);
+                    document.querySelector('.fee').innerHTML = `${fee} ${currName}`;
+
+                    var nds = parseInt((priceVal + fee + excisePrice) * 0.2);
+                    document.querySelector('.nds').innerHTML = `${nds} ${currName}`;
+
+                    var companyTax = 700;
+
+                    var deliveryFromUSA = 1000;
+
+
+
+                    document.querySelector('.all-fee').innerHTML = `${excisePrice + fee + nds} ${currName}`;
+
+                }
+            }
+
         })
     })
 
@@ -112,83 +210,89 @@ if (document.querySelector('.count')){
         })
     })
 }
-// if(document.querySelector('.thnx-button')){
-//     document.querySelectorAll('.thnx-button').forEach(item => {
-//         item.addEventListener('click', function () {
-//             this.parentNode.parentNode.classList.add('active');
-//             setTimeout(function () {
-//                 document.querySelector('.callback-block').classList.remove('active');
-//             },3000)
-//
-//         })
-//     })
-//
-// }
 
-// отправка данных с формы
-function sendData(item) {
 
-    // var data = new URLSearchParams(new FormData(item)).toString()
-    var name = item.querySelector('#name-callback-form').value;
-    var phone = item.querySelector('#tel-callback-form').value;
 
-    var option = {
-        method: 'POST',
-        headers: {
-            "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-        },
-        body: 'firstname='+name+'&phone='+phone+''
-    };
 
-    fetch('../php/send.php', option)
-        .then(response => {
-            if (response.ok){
-                console.log('Do something')
-            }
-        })
+if (document.querySelector('.status-delivery')){
+    var progressLine;
+    document.querySelectorAll('.status-delivery').forEach(item => {
+
+        var activeItem = item.querySelectorAll('.active').length;
+
+        if (activeItem === 1){
+            progressLine = 0;
+        } else if(activeItem === 2){
+            progressLine = 50;
+        } else {
+            progressLine = 100;
+        }
+        item.querySelector('.progress-bar').style.width = `${progressLine}%`
+    })
 }
 
-if( document.querySelector('form.send-data')){
-    document.querySelector('form.send-data').addEventListener('submit', function(e) {
-        e.preventDefault();
-        var name = this.querySelector('#name-callback-form');
-        var phone = this.querySelector('#tel-callback-form');
-        var nameOk = false;
-        var phoneOk = false;
-        var phoneno = /^(\([0-9]{3}\)\s*|[0-9]{3}\-)[0-9]{3}-[0-9]{4}$/;
-        console.log(phone.value.match(phoneno))
 
-        if (name.value.length < 2 ){
-            name.value = '';
-            name.setAttribute('placeholder','Введите имя');
-            name.parentNode.classList.add('false')
-            console.log('enter valid name');
-        } else {
-            name.parentNode.classList.remove('false')
-            nameOk = true;
-        }
-
-        if (phone.value.match(phoneno) === null){
-            phone.value = '';
-            phone.setAttribute('placeholder', 'Введите номер 123-456-7890')
-            phone.parentNode.classList.add('false')
-            console.log('enter valid number');
-
-        } else {
-            phone.parentNode.classList.remove('false')
-            phoneOk = true;
-        }
+var destination = [];
+var state;
+var auction;
+var citySelect = document.querySelector('#delivery-from-city');
 
 
-        console.log(nameOk, phoneOk)
-        if ( nameOk == true && phoneOk == true ){
-            this.classList.add('active');
-            setTimeout(function () {
-                document.querySelector('.callback-block').classList.remove('active');
-            },4000);
-            sendData(this)
-        }
+
+if (document.querySelector('#delivery-from-auction')){
+    document.querySelector('#delivery-from-auction').addEventListener('change', function() {
+
+        var select = this.value.split(' ');
+        state = select[1];
+        auction = select[0];
+
+        citySelect.innerHTML = '<option value="000"></option>'
+        destination = []
+        getDestinationData(`./../json/${auction.toLowerCase()}.json`)
 
     })
 }
 
+
+
+function getDestinationData(src) {
+    fetch(src)
+        .then(response => {
+            response.json().then(function(data) {
+                data.map(function(item) {
+                    destination.push(item)
+                })
+            });
+
+        })
+        .then(function () {
+            var i = 0;
+
+            setTimeout(()=>{
+                destination.map(item => {
+                    console.log(item)
+                    if (item[state]) {
+                        citySelect.innerHTML += `<option value=${i}>${item['DESTINATION ('+auction+')']}</option>`
+                        i++
+                    }
+                })
+            },100)
+        })
+}
+
+
+function querySelector(selector) {
+    return document.querySelector(selector)
+}
+
+//-----------------delivery block-----------------//
+
+if (document.querySelector('.more-about-delivery')) {
+    document.querySelector('.more-about-delivery').addEventListener('click', () => {
+        document.querySelector('.delivery-container').classList.add('_active')
+    })
+
+    document.querySelector('.close-delivery-block').addEventListener('click', () => {
+        querySelector('.delivery-container').classList.remove('_active')
+    })
+}

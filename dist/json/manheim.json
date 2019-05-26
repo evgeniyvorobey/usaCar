@@ -1,0 +1,386 @@
+﻿[
+        {
+            "DESTINATION (MANHEIM)": "AL-Manheim Birmingham",
+            "NJ": "480",
+            "GA": "250"
+        },
+        {
+            "DESTINATION (MANHEIM)": "AZ-Maiheim Phoenix",
+            "NJ": "830",
+            "CA": "250"
+        },
+        {
+            "DESTINATION (MANHEIM)": "AZ-Maiheim Tucson",
+            "NJ": "870",
+            "CA": "325"
+        },
+        {
+            "DESTINATION (MANHEIM)": "CA-Manheim California",
+            "NJ": "950",
+            "CA": "130"
+        },
+        {
+            "DESTINATION (MANHEIM)": "CA-Manheim Central California",
+            "NJ": "950",
+            "CA": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "CA-Manheim Riverside",
+            "NJ": "950",
+            "CA": "150"
+        },
+        {
+            "DESTINATION (MANHEIM)": "CA-Manheim San Diego",
+            "NJ": "950",
+            "CA": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "CA-Manheim San Francisco Bay",
+            "NJ": "950",
+            "CA": "220"
+        },
+        {
+            "DESTINATION (MANHEIM)": "CA-Manheim Southern California",
+            "NJ": "950",
+            "CA": "130"
+        },
+        {
+            "DESTINATION (MANHEIM)": "CO-Manheim Denver",
+            "NJ": "700",
+            "CA": "500",
+            "TX": "500"
+        },
+        {
+            "DESTINATION (MANHEIM)": "CO-Manheim Littleton Colotaro (TRA)",
+            "NJ": "700",
+            "CA": "460",
+            "TX": "460"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Central Florida",
+            "NJ": "430",
+            "GA": "200",
+            "FL": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Daytona Beach",
+            "NJ": "480",
+            "GA": "200",
+            "FL": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Fort Lauderdale",
+            "NJ": "480",
+            "GA": "200",
+            "FL": "120"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Fort Myers",
+            "NJ": "500",
+            "GA": "300",
+            "FL": "175"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Imperial Florida",
+            "NJ": "500",
+            "GA": "200",
+            "FL": "225"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Jacksonville",
+            "NJ": "480",
+            "GA": "125",
+            "FL": "175"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Lakeland",
+            "NJ": "500",
+            "GA": "200",
+            "FL": "225"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Maihein Orlando",
+            "NJ": "550",
+            "GA": "175",
+            "FL": "175"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Maihein Palm Beach",
+            "NJ": "450",
+            "GA": "300",
+            "FL": "130"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Pensacola",
+            "NJ": "650",
+            "GA": "275",
+            "FL": "300"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Maiheim St.Pete",
+            "NJ": "500",
+            "GA": "225",
+            "FL": "150"
+        },
+        {
+            "DESTINATION (MANHEIM)": "FL-Manheim Tampa",
+            "NJ": "480",
+            "GA": "210",
+            "FL": "210"
+        },
+        {
+            "DESTINATION (MANHEIM)": "GA-Manheim Atlanta",
+            "NJ": "400",
+            "GA": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "GA-Manheim Georgia",
+            "NJ": "400",
+            "GA": "175"
+        },
+        {
+            "DESTINATION (MANHEIM)": "GA-myCentralAuction",
+            "NJ": "400",
+            "GA": "175"
+        },
+        {
+            "DESTINATION (MANHEIM)": "HI-Manheim Hawaii",
+            "NJ": "2450",
+            "CA": "1700"
+        },
+        {
+            "DESTINATION (MANHEIM)": "IL-Manheim Arena Illinois",
+            "NJ": "400"
+        },
+        {
+            "DESTINATION (MANHEIM)": "IL-Manheim Chicago",
+            "NJ": "425"
+        },
+        {
+            "DESTINATION (MANHEIM)": "IN-Manheim Indianapolis",
+            "NJ": "450"
+        },
+        {
+            "DESTINATION (MANHEIM)": "IN-Manheim Louisville",
+            "NJ": "450"
+        },
+        {
+            "DESTINATION (MANHEIM)": "LA-Manheim Lafayette",
+            "NJ": "580",
+            "GA": "530",
+            "TX": "310"
+        },
+        {
+            "DESTINATION (MANHEIM)": "LA-Manheim New Orleans",
+            "NJ": "580",
+            "GA": "530",
+            "TX": "310"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MA-Manheim New Englang",
+            "NJ": "275"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MD-Manheim Baltimore-Washington",
+            "NJ": "250"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MI-Manheim Detroit",
+            "NJ": "480"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MI-Manheim Flint (TRA)",
+            "NJ": "480"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MN-Manheim Minneapolis",
+            "NJ": "540"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MN-Manheim Northstar Minnesota",
+            "NJ": "540"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MO-Manheim Kansas City",
+            "NJ": "575",
+            "TX": "350"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MO-Manheim Springfield",
+            "NJ": "580",
+            "TX": "450"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MO-Manheim St. Louis",
+            "NJ": "500",
+            "TX": "425"
+        },
+        {
+            "DESTINATION (MANHEIM)": "MO-Manheim Mississippi",
+            "NJ": "580",
+            "TX": "300"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NC-Manheim Charlotte",
+            "NJ": "300",
+            "GA": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NC-Manheim North Carolina",
+            "NJ": "350",
+            "GA": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NC-Manheim Statesville",
+            "NJ": "350",
+            "GA": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NE-Manheim Omaha",
+            "NJ": "580",
+            "TX": "550"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NJ-Manheim New Jersey",
+            "NJ": "120"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NJ-Manheim Ny Metro Skyline",
+            "NJ": "120"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NM-Manheim New Mexico",
+            "NJ": "850",
+            "CA": "450",
+            "TX": "750"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NV-Manheim Nevada",
+            "NJ": "950",
+            "CA": "260"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NY-Manheim Albany",
+            "NJ": "250"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NY-Manheim New York",
+            "NJ": "150"
+        },
+        {
+            "DESTINATION (MANHEIM)": "NY-Manheim North Jersey Distribution Center",
+            "NJ": "225"
+        },
+        {
+            "DESTINATION (MANHEIM)": "OH-Manheim Cincinnati",
+            "NJ": "350"
+        },
+        {
+            "DESTINATION (MANHEIM)": "OH-Manheim Ohio",
+            "NJ": "410"
+        },
+        {
+            "DESTINATION (MANHEIM)": "OK-Manheim Tulsa",
+            "NJ": "580",
+            "TX": "450"
+        },
+        {
+            "DESTINATION (MANHEIM)": "OR-Manheim Portland",
+            "NJ": "950",
+            "CA": "400",
+            "TX": "400"
+        },
+        {
+            "DESTINATION (MANHEIM)": "PA-Manheim Keystone Penssylvania",
+            "NJ": "225"
+        },
+        {
+            "DESTINATION (MANHEIM)": "PA-Manheim  Penssylvania",
+            "NJ": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "PA-Manheim Philadelphia",
+            "NJ": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "PA-Manheim Pittsburgh",
+            "NJ": "325",
+            "CA": "CA",
+            "GA": "GA",
+            "TX": "TX",
+            "FL": "FL"
+        },
+        {
+            "DESTINATION (MANHEIM)": "SC-Manheim Darlington",
+            "NJ": "450",
+            "GA": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "SC-Manheim Greer",
+            "NJ": "450",
+            "GA": "250"
+        },
+        {
+            "DESTINATION (MANHEIM)": "TN-Manheim Nashville",
+            "NJ": "425",
+            "GA": "300",
+            "TX": "500"
+        },
+        {
+            "DESTINATION (MANHEIM)": "TX-Manheim Dallas",
+            "NJ": "850",
+            "TX": "250"
+        },
+        {
+            "DESTINATION (MANHEIM)": "TX-Manheim Dallas Fort Worth",
+            "NJ": "850",
+            "TX": "250"
+        },
+        {
+            "DESTINATION (MANHEIM)": "TX-Manheim El Paso",
+            "NJ": "950",
+            "TX": "350"
+        },
+        {
+            "DESTINATION (MANHEIM)": "TX-Manheim Houston",
+            "NJ": "850",
+            "TX": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "TX-Manheim San Antonio",
+            "NJ": "850",
+            "TX": "270"
+        },
+        {
+            "DESTINATION (MANHEIM)": "TX-Manheim Texas Hobby",
+            "NJ": "850",
+            "TX": "200"
+        },
+        {
+            "DESTINATION (MANHEIM)": "TX-Manheim Utah",
+            "NJ": "900",
+            "CA": "500"
+        },
+        {
+            "DESTINATION (MANHEIM)": "VA-Manheim Fredericksburg",
+            "NJ": "300"
+        },
+        {
+            "DESTINATION (MANHEIM)": "VA-Manheim Harrisonburg",
+            "NJ": "350"
+        },
+        {
+            "DESTINATION (MANHEIM)": "WA-Manheim Seattle",
+            "NJ": "950",
+            "CA": "550"
+        },
+        {
+            "DESTINATION (MANHEIM)": "WI-Manheim Milwaukee",
+            "NJ": "520"
+        },
+        {
+            "DESTINATION (MANHEIM)": "WY-Manheim Casper (TRA)",
+            "NJ": "1150",
+            "CA": "600"
+        }
+    ]

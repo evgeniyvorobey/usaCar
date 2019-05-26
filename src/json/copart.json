@@ -1,0 +1,797 @@
+[
+	{
+		"DESTINATION (COPART)": "AK-ANCHORAGE",
+		"NJ": "2400",
+		"CA": "1900"
+	},
+	{
+		"DESTINATION (COPART)": "AL-BIRMINGHAM",
+		"NJ": "480",
+		"GA": "300"
+	},
+	{
+		"DESTINATION (COPART)": "AL-MOBILE",
+		"NJ": "700",
+		"GA": "280"
+	},
+	{
+		"DESTINATION (COPART)": "AL-MONTGOMERY",
+		"NJ": "580",
+		"GA": "280"
+	},
+	{
+		"DESTINATION (COPART)": "AL-TANNER",
+		"NJ": "550",
+		"GA": "350"
+	},
+	{
+		"DESTINATION (COPART)": "AR-FAYTTEVILLE",
+		"NJ": "580",
+		"TX": "500"
+	},
+	{
+		"DESTINATION (COPART)": "AR-LITTLE ROCK",
+		"NJ": "560",
+		"TX": "500"
+	},
+	{
+		"DESTINATION (COPART)": "AZ-PHOENIX",
+		"NJ": "870",
+		"CA": "260"
+	},
+	{
+		"DESTINATION (COPART)": "AZ-TUCSON",
+		"NJ": "870",
+		"CA": "300"
+	},
+	{
+		"DESTINATION (COPART)": "CA-BAKERSFIELT",
+		"NJ": "950",
+		"CA": "200"
+	},
+	{
+		"DESTINATION (COPART)": "CA-FRESNO",
+		"NJ": "950",
+		"CA": "200"
+	},
+	{
+		"DESTINATION (COPART)": "CA-HAYWARD",
+		"NJ": "950",
+		"CA": "220"
+	},
+	{
+		"DESTINATION (COPART)": "CA-HAYWARD-DESERT VIEW",
+		"NJ": "950",
+		"CA": "220"
+	},
+	{
+		"DESTINATION (COPART)": "CA-LOS ANGELES",
+		"NJ": "950",
+		"CA": "120"
+	},
+	{
+		"DESTINATION (COPART)": "CA-MARTINEZ",
+		"NJ": "950",
+		"CA": "260"
+	},
+	{
+		"DESTINATION (COPART)": "CA-RANCHO-DESERT VIEW",
+		"NJ": "950",
+		"CA": "120"
+	},
+	{
+		"DESTINATION (COPART)": "CA-RANCHO-CUCAMONGA",
+		"NJ": "950",
+		"CA": "120"
+	},
+	{
+		"DESTINATION (COPART)": "CA-SACRAMENTO",
+		"NJ": "950",
+		"CA": "250"
+	},
+	{
+		"DESTINATION (COPART)": "CA-SACRAMENTO-DESERT VIEW",
+		"NJ": "950",
+		"CA": "250"
+	},
+	{
+		"DESTINATION (COPART)": "CA-SAN JOSE",
+		"NJ": "950",
+		"CA": "200"
+	},
+	{
+		"DESTINATION (COPART)": "CA-SANTA PAULA-DESERT VIEW",
+		"NJ": "950",
+		"CA": "160"
+	},
+	{
+		"DESTINATION (COPART)": "CA-SO SACRAMENTO",
+		"NJ": "950",
+		"CA": "250"
+	},
+	{
+		"DESTINATION (COPART)": "CA-SUN VALLEY",
+		"NJ": "950",
+		"CA": "120"
+	},
+	{
+		"DESTINATION (COPART)": "CA-VALLEJO",
+		"NJ": "950",
+		"CA": "260"
+	},
+	{
+		"DESTINATION (COPART)": "CA-VAN NUYS",
+		"NJ": "950",
+		"CA": "120"
+	},
+	{
+		"DESTINATION (COPART)": "CO-COLORADO SPRINGS",
+		"NJ": "700",
+		"CA": "460",
+		"TX": "460"
+	},
+	{
+		"DESTINATION (COPART)": "CO-DENVER",
+		"NJ": "700",
+		"CA": "460",
+		"TX": "460"
+	},
+	{
+		"DESTINATION (COPART)": "CO-DENVER CNTRAL",
+		"NJ": "700",
+		"CA": "460",
+		"TX": "460"
+	},
+	{
+		"DESTINATION (COPART)": "CO-DENVER SOUTH",
+		"NJ": "700",
+		"CA": "460",
+		"TX": "460"
+	},
+	{
+		"DESTINATION (COPART)": "CT-HARTFORD",
+		"NJ": "175"
+	},
+	{
+		"DESTINATION (COPART)": "DC-WASHINGTON DC-MD",
+		"NJ": "240"
+	},
+	{
+		"DESTINATION (COPART)": "DE-SEAFORD",
+		"NJ": "240"
+	},
+	{
+		"DESTINATION (COPART)": "FL-FT.PIERCE",
+		"NJ": "500",
+		"GA": "250",
+		"FL": "250"
+	},
+	{
+		"DESTINATION (COPART)": "FL-JACKSONVILLE EAST",
+		"NJ": "480",
+		"GA": "125",
+		"FL": "175"
+	},
+	{
+		"DESTINATION (COPART)": "FL-JACKSONVILLE WEST",
+		"NJ": "480",
+		"GA": "150",
+		"FL": "175"
+	},
+	{
+		"DESTINATION (COPART)": "FL-MIAMI CENTRAL",
+		"NJ": "450",
+		"GA": "250",
+		"FL": "120"
+	},
+	{
+		"DESTINATION (COPART)": "FL-MIAMI NIRTH",
+		"NJ": "450",
+		"GA": "300",
+		"FL": "120"
+	},
+	{
+		"DESTINATION (COPART)": "FL-MIAMI SOUTH",
+		"NJ": "480",
+		"GA": "225",
+		"FL": "110"
+	},
+	{
+		"DESTINATION (COPART)": "FL-OCALA",
+		"NJ": "450",
+		"GA": "210",
+		"FL": "150"
+	},
+	{
+		"DESTINATION (COPART)": "FL-ORLANDO",
+		"NJ": "480",
+		"GA": "180",
+		"FL": "180"
+	},
+	{
+		"DESTINATION (COPART)": "FL-ORLANDO NORTH",
+		"NJ": "480",
+		"GA": "180",
+		"FL": "180"
+	},
+	{
+		"DESTINATION (COPART)": "FL-PUNTA GORDA",
+		"NJ": "490",
+		"GA": "190",
+		"FL": "190"
+	},
+	{
+		"DESTINATION (COPART)": "FL-TALLAHASSEE",
+		"NJ": "510",
+		"GA": "200",
+		"FL": "225"
+	},
+	{
+		"DESTINATION (COPART)": "FL-TAMPA SOUTH",
+		"NJ": "500",
+		"GA": "225",
+		"FL": "225"
+	},
+	{
+		"DESTINATION (COPART)": "FL-WEST PALM BEACH",
+		"NJ": "450",
+		"GA": "300",
+		"FL": "120"
+	},
+	{
+		"DESTINATION (COPART)": "GA-ATLANTA EAST",
+		"NJ": "450",
+		"GA": "200"
+	},
+	{
+		"DESTINATION (COPART)": "GA-ATLANTA NORTH",
+		"NJ": "450",
+		"GA": "200"
+	},
+	{
+		"DESTINATION (COPART)": "GA-ATLANTA SOUTH",
+		"NJ": "450",
+		"GA": "200"
+	},
+	{
+		"DESTINATION (COPART)": "GA-ATLANTA WEST",
+		"NJ": "450",
+		"GA": "200"
+	},
+	{
+		"DESTINATION (COPART)": "GA-CARTERSVILLE",
+		"NJ": "450",
+		"GA": "250"
+	},
+	{
+		"DESTINATION (COPART)": "GA-SAVANNAH",
+		"NJ": "400",
+		"GA": "100"
+	},
+	{
+		"DESTINATION (COPART)": "GA-TIFTON",
+		"NJ": "480",
+		"GA": "180"
+	},
+	{
+		"DESTINATION (COPART)": "HI-HONOLULU",
+		"NJ": "2450",
+		"CA": "1700"
+	},
+	{
+		"DESTINATION (COPART)": "IA-CRASHEDTOYS ELDRIDGE",
+		"NJ": "550"
+	},
+	{
+		"DESTINATION (COPART)": "IA-DEVENPORT",
+		"NJ": "550"
+	},
+	{
+		"DESTINATION (COPART)": "IA-DES MOINES",
+		"NJ": "550"
+	},
+	{
+		"DESTINATION (COPART)": "ID-BOISE ",
+		"NJ": "1050",
+		"CA": "550"
+	},
+	{
+		"DESTINATION (COPART)": "IL-CHICAGO NORTH",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "IL-CHICAGO SOUTH",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "IL-PEORIA",
+		"NJ": "480"
+	},
+	{
+		"DESTINATION (COPART)": "IL-SOUTHERN ILLINOIS",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "IL-WHEELING",
+		"NJ": "440"
+	},
+	{
+		"DESTINATION (COPART)": "IN-FORT WAYNE",
+		"NJ": "480"
+	},
+	{
+		"DESTINATION (COPART)": "IN-HAMMOND",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "IN-INDIANAPOLIS",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "KS-KANSAN CITY",
+		"NJ": "575",
+		"TX": "350"
+	},
+	{
+		"DESTINATION (COPART)": "KS-WICHITA",
+		"NJ": "575",
+		"TX": "375"
+	},
+	{
+		"DESTINATION (COPART)": "KY-LEXINGTON EAST",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "KY-LEXINGTON WEST",
+		"NJ": "480"
+	},
+	{
+		"DESTINATION (COPART)": "KY-LOUISVILLE",
+		"NJ": "480"
+	},
+	{
+		"DESTINATION (COPART)": "KY-WALTON",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "LA-BATON ROUGE",
+		"NJ": "580",
+		"GA": "530",
+		"TX": "310"
+	},
+	{
+		"DESTINATION (COPART)": "LA-NEW ORLEANS",
+		"NJ": "580",
+		"GA": "530",
+		"TX": "310"
+	},
+	{
+		"DESTINATION (COPART)": "LA-SHREVEPORT",
+		"NJ": "580",
+		"GA": "530",
+		"TX": "350"
+	},
+	{
+		"DESTINATION (COPART)": "MA-NORTH BOSTON",
+		"NJ": "250"
+	},
+	{
+		"DESTINATION (COPART)": "MA-SOUTH BOSTON",
+		"NJ": "250"
+	},
+	{
+		"DESTINATION (COPART)": "MA-WEST WARREN",
+		"NJ": "260"
+	},
+	{
+		"DESTINATION (COPART)": "MD-BALTIMORE",
+		"NJ": "270"
+	},
+	{
+		"DESTINATION (COPART)": "ME-LYMAN",
+		"NJ": "350"
+	},
+	{
+		"DESTINATION (COPART)": "ME-ORONO",
+		"NJ": "575"
+	},
+	{
+		"DESTINATION (COPART)": "MI-DETROIT",
+		"NJ": "375"
+	},
+	{
+		"DESTINATION (COPART)": "MI-FLINT",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "MI-IONIA",
+		"NJ": "480"
+	},
+	{
+		"DESTINATION (COPART)": "MI-KINCHELOE",
+		"NJ": "900"
+	},
+	{
+		"DESTINATION (COPART)": "MI-LANSING",
+		"NJ": "490"
+	},
+	{
+		"DESTINATION (COPART)": "MN-CRASHEDTOYS EAST BETHEL",
+		"NJ": "490"
+	},
+	{
+		"DESTINATION (COPART)": "MN-MINNEAPOLIS",
+		"NJ": "580"
+	},
+	{
+		"DESTINATION (COPART)": "MN-MINNEAPOLIS NORTH",
+		"NJ": "580"
+	},
+	{
+		"DESTINATION (COPART)": "MN-ST. CLOUD",
+		"NJ": "550"
+	},
+	{
+		"DESTINATION (COPART)": "MO-COLUMBIA",
+		"NJ": "580"
+	},
+	{
+		"DESTINATION (COPART)": "MO-SIKESTON",
+		"NJ": "750"
+	},
+	{
+		"DESTINATION (COPART)": "MO-SPRINGFIELD",
+		"NJ": "600"
+	},
+	{
+		"DESTINATION (COPART)": "MO-ST. LOUIS",
+		"NJ": "500"
+	},
+	{
+		"DESTINATION (COPART)": "MS-JACKSON",
+		"NJ": "800",
+		"TX": "350"
+	},
+	{
+		"DESTINATION (COPART)": "MT-BILLINGS",
+		"NJ": "1000",
+		"CA": "600"
+	},
+	{
+		"DESTINATION (COPART)": "MT-HELENA",
+		"NJ": "1000",
+		"CA": "750"
+	},
+	{
+		"DESTINATION (COPART)": "NC-CHINA GROVE",
+		"NJ": "300",
+		"GA": "200"
+	},
+	{
+		"DESTINATION (COPART)": "NC-MEBANE",
+		"NJ": "380",
+		"GA": "250"
+	},
+	{
+		"DESTINATION (COPART)": "NC-RALEIGH",
+		"NJ": "300",
+		"GA": "225"
+	},
+	{
+		"DESTINATION (COPART)": "NE-LINCOLN",
+		"NJ": "680"
+	},
+	{
+		"DESTINATION (COPART)": "NH-CANDIA",
+		"NJ": "350"
+	},
+	{
+		"DESTINATION (COPART)": "NH-WEBSTER",
+		"NJ": "350"
+	},
+	{
+		"DESTINATION (COPART)": "NJ-CLASSBORO EAST",
+		"NJ": "120"
+	},
+	{
+		"DESTINATION (COPART)": "NJ-SOMERVILLE",
+		"NJ": "90"
+	},
+	{
+		"DESTINATION (COPART)": "NJ-TRENTON",
+		"NJ": "120"
+	},
+	{
+		"DESTINATION (COPART)": "NM-ALBUQUERQUE",
+		"NJ": "850",
+		"CA": "450",
+		"TX": "570"
+	},
+	{
+		"DESTINATION (COPART)": "NV-LAS VEGAS",
+		"NJ": "950",
+		"CA": "260"
+	},
+	{
+		"DESTINATION (COPART)": "NV-RENO",
+		"NJ": "950",
+		"CA": "360"
+	},
+	{
+		"DESTINATION (COPART)": "NY-ALBANY",
+		"NJ": "225"
+	},
+	{
+		"DESTINATION (COPART)": "NY-LONG ISLAND",
+		"NJ": "175"
+	},
+	{
+		"DESTINATION (COPART)": "NY-NEWBURGH",
+		"NJ": "150"
+	},
+	{
+		"DESTINATION (COPART)": "NY-ROCHESTER",
+		"NJ": "280"
+	},
+	{
+		"DESTINATION (COPART)": "NY-SYRACUSE",
+		"NJ": "260"
+	},
+	{
+		"DESTINATION (COPART)": "OH-CLEVELAND EAST",
+		"NJ": "400"
+	},
+	{
+		"DESTINATION (COPART)": "OH-CLEVELAND WEST",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "OH-COLUMBUS",
+		"NJ": "400"
+	},
+	{
+		"DESTINATION (COPART)": "OH-DAYTON",
+		"NJ": "425"
+	},
+	{
+		"DESTINATION (COPART)": "OK-OKLAHOMA CITY",
+		"NJ": "540",
+		"TX": "340"
+	},
+	{
+		"DESTINATION (COPART)": "OK-TULSA",
+		"NJ": "540",
+		"TX": "400"
+	},
+	{
+		"DESTINATION (COPART)": "OR-EUGENE",
+		"NJ": "950",
+		"CA": "440"
+	},
+	{
+		"DESTINATION (COPART)": "OR-PORTLAND NORTH",
+		"NJ": "950",
+		"CA": "420"
+	},
+	{
+		"DESTINATION (COPART)": "OR-PORTLAND SOUTH",
+		"NJ": "900",
+		"CA": "430"
+	},
+	{
+		"DESTINATION (COPART)": "OR-WOODBURN",
+		"NJ": "900",
+		"CA": "430"
+	},
+	{
+		"DESTINATION (COPART)": "PA-ALTOONA",
+		"NJ": "280"
+	},
+	{
+		"DESTINATION (COPART)": "PA-CHAMBERSBURG",
+		"NJ": "250"
+	},
+	{
+		"DESTINATION (COPART)": "PA-HARRISBURG",
+		"NJ": "225"
+	},
+	{
+		"DESTINATION (COPART)": "PA-PHILADELPHIA",
+		"NJ": "130"
+	},
+	{
+		"DESTINATION (COPART)": "PA-PHILADELPHIA EAST",
+		"NJ": "130"
+	},
+	{
+		"DESTINATION (COPART)": "PA-PITTSBURGH EAST",
+		"NJ": "300"
+	},
+	{
+		"DESTINATION (COPART)": "PA-PITTSBURGH NORTH",
+		"NJ": "300"
+	},
+	{
+		"DESTINATION (COPART)": "PA-PITTSBURGH SOUTH",
+		"NJ": "310"
+	},
+	{
+		"DESTINATION (COPART)": "PA-SCRANTON",
+		"NJ": "250"
+	},
+	{
+		"DESTINATION (COPART)": "PA-YORK HAVEN",
+		"NJ": "280"
+	},
+	{
+		"DESTINATION (COPART)": "SC-COLUMBIA",
+		"NJ": "475",
+		"GA": "175"
+	},
+	{
+		"DESTINATION (COPART)": "SC-GREER",
+		"NJ": "475",
+		"GA": "175"
+	},
+	{
+		"DESTINATION (COPART)": "TN-KNOXVILLE",
+		"NJ": "420",
+		"GA": "300"
+	},
+	{
+		"DESTINATION (COPART)": "TN-MEMPHIS",
+		"NJ": "470",
+		"GA": "325"
+	},
+	{
+		"DESTINATION (COPART)": "TN-NASHVILLE",
+		"NJ": "480",
+		"GA": "280"
+	},
+	{
+		"DESTINATION (COPART)": "TX-ABILENE",
+		"NJ": "850",
+		"TX": "280"
+	},
+	{
+		"DESTINATION (COPART)": "TX-AMARILLO",
+		"NJ": "850",
+		"TX": "350"
+	},
+	{
+		"DESTINATION (COPART)": "TX-AUSTIN",
+		"NJ": "850",
+		"TX": "350"
+	},
+	{
+		"DESTINATION (COPART)": "TX-CORPUS CHRISTI",
+		"NJ": "750",
+		"TX": "300"
+	},
+	{
+		"DESTINATION (COPART)": "TX-CRASHEDTOYS DALLAS",
+		"NJ": "850",
+		"TX": "300"
+	},
+	{
+		"DESTINATION (COPART)": "TX-DALLAS",
+		"NJ": "850",
+		"TX": "300"
+	},
+	{
+		"DESTINATION (COPART)": "TX-DALLAS SOUTH",
+		"NJ": "850",
+		"TX": "300"
+	},
+	{
+		"DESTINATION (COPART)": "TX-EL PASO",
+		"NJ": "950",
+		"TX": "350"
+	},
+	{
+		"DESTINATION (COPART)": "TX-FT. WORTH",
+		"NJ": "850",
+		"TX": "280"
+	},
+	{
+		"DESTINATION (COPART)": "TX-HOUSTON",
+		"NJ": "850",
+		"TX": "200"
+	},
+	{
+		"DESTINATION (COPART)": "TX-LONGVIEW",
+		"NJ": "850",
+		"TX": "290"
+	},
+	{
+		"DESTINATION (COPART)": "TX-LUFKIN",
+		"NJ": "850",
+		"TX": "300"
+	},
+	{
+		"DESTINATION (COPART)": "TX-MCALLEN",
+		"NJ": "850",
+		"TX": "300"
+	},
+	{
+		"DESTINATION (COPART)": "TX-SAN ANTONIO",
+		"NJ": "850",
+		"TX": "300"
+	},
+	{
+		"DESTINATION (COPART)": "TX-WACO",
+		"NJ": "850",
+		"TX": "300"
+	},
+	{
+		"DESTINATION (COPART)": "UT-SALT LAKE CITY",
+		"NJ": "900",
+		"CA": "450"
+	},
+	{
+		"DESTINATION (COPART)": "VA-DANVILLE",
+		"NJ": "330"
+	},
+	{
+		"DESTINATION (COPART)": "VA-HAMPTON",
+		"NJ": "300"
+	},
+	{
+		"DESTINATION (COPART)": "VA-RICHMOND",
+		"NJ": "300"
+	},
+	{
+		"DESTINATION (COPART)": "VT-FAIR HAVEN",
+		"NJ": "500"
+	},
+	{
+		"DESTINATION (COPART)": "VT-ORLEANS",
+		"NJ": "500"
+	},
+	{
+		"DESTINATION (COPART)": "VT-RUTLAND",
+		"NJ": "500"
+	},
+	{
+		"DESTINATION (COPART)": "WA-GRAHAM",
+		"NJ": "950",
+		"CA": "480"
+	},
+	{
+		"DESTINATION (COPART)": "WA-NORTH SEATTLE",
+		"NJ": "1050",
+		"CA": "480"
+	},
+	{
+		"DESTINATION (COPART)": "WA-PASCO",
+		"NJ": "950",
+		"CA": "650"
+	},
+	{
+		"DESTINATION (COPART)": "WA-SPOKANE",
+		"NJ": "950",
+		"CA": "675"
+	},
+	{
+		"DESTINATION (COPART)": "WI-MADISON",
+		"NJ": "530"
+	},
+	{
+		"DESTINATION (COPART)": "WI-MILWAUKEE",
+		"NJ": "530"
+	},
+	{
+		"DESTINATION (COPART)": "WV-CHARLESTON",
+		"NJ": "450"
+	},
+	{
+		"DESTINATION (COPART)": "WY-CASPER",
+		"NJ": "1150",
+		"CA": "1100"
+	},
+	{
+		"DESTINATION (COPART)": "UT-OGDEN",
+		"NJ": "900",
+		"CA": "450"
+	}
+]

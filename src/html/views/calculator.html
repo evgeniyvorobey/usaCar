@@ -10,42 +10,59 @@
             <div class="info-block">
                 <h2>Растаможка</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
+                    Чтобы расстаможить подержанное авто из США в Украине, необходимо подготовить пакет документов:
 
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
+                    оригинал технического паспорта транспортного средства;
+                    справки и чеки, подтверждающие покупку;
+                    транспортую накладную (домашний и линейный коносамент, пропечатанный таможней);
+                    наряд на расформирование;
+                    чек со стоимостью транспортировки;
+                    гражданский паспорт и ИНН код нового владельца.
                 </p>
             </div>
             <div class="calculator-block">
-                <div class="result">
+                <div class="result fee-result">
                     <p>
-                        Стоимость вашей доставки составляет
-                        <span>3 299 $</span>
+                        <span>Акциз</span>
+                        <span class="excise"></span>
+                    </p>
+                    <p>
+                        <span>Пошлина</span>
+                        <span class="fee"></span>
+                    </p>
+                    <p>
+                        <span>НДС</span>
+                        <span class="nds"></span>
+                    </p>
+                    <p>
+                        <span>Общая сумма</span>
+                        <span class="all-fee"></span>
                     </p>
                     <button class="agree">Ok</button>
                 </div>
-                <div class="form" >
+                <div class="form " >
                     <div class="input-container">
-                        <label for="">Год</label>
-                        <input type="text" placeholder="Например 2016" required>
+                        <label for="year">Год</label>
+                        <input if-false="Заполните поле" id="year" type="number" placeholder="Например 2016" required>
                     </div>
                     <div class="input-container">
-                        <label for="">Обьем</label>
-                        <input type="text" placeholder="Например 2.0" required>
+                        <label for="engineСapacity">Обьем</label>
+                        <input if-false="Заполните поле" id="engineСapacity" type="number" placeholder="Например 2.0" required>
                     </div>
                     <div class="input-container">
-                        <label for="">Стоимиость в $ США</label>
-                        <input type="text" placeholder="9 000 $" required>
+                        <label for="price">Стоимиость в $ США</label>
+                        <input if-false="Заполните поле" type="number" id="price" placeholder="9 000 $" required>
                     </div>
                     <div class="input-container">
-                        <label for="">Вид топлива</label>
-                        <select name="" id="" required>
-                            <option value=""></option>
-                            <option value="1">Бензин</option>
-                            <option value="2">Дизел</option>
-                            <option value=3>Электро</option>
+                        <label for="fuel">Вид топлива</label>
+                        <select if-false="Заполните поле" name="fuel" id="fuel" required>
+                            <option value="000"></option>
+                            <option value="50">Бензин</option>
+                            <option value="75">Дизель</option>
+                            <option value=0>Электро</option>
                         </select>
                     </div>
-                    <button class="count">Расчитать</button>
+                    <button class="count tax">Расчитать</button>
                     <div class=""></div>
                 </div>
             </div>
@@ -54,9 +71,8 @@
             <div class="info-block">
                 <h2>Доставка</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores, culpa deleniti fugit modi odit voluptatibus. Accusantium adipisci quae qui rerum velit, voluptates! Eius id illo quae quod recusandae tempore?
-
+                    Наша компания предлагает свои услуги по доставке автомобилей с аукционов США в Украину. Мы возьмем на себя подготовку всех необходимых документов, выстроим логистику, организуем транспортировку по Америке и в порт Одессы.
+                    По времени данные работы, с даты приобретения техники на аукционе и до ее передачи заказчику, занимают 6-8 недель. После отгрузки заказчику предоставляется VIN-код автомобиля, позволяющий отслеживать его местонахождение в режиме реального времени.
                 </p>
             </div>
             <div class="calculator-block">
@@ -67,32 +83,35 @@
                     </p>
                     <button class="agree">Ok</button>
                 </div>
-                <div class="form" >
+                <div >
+                    <div class="input-container">
+                        <label for="">Аукцион</label>
+                        <select id="delivery-from-auction" required>
+                            <option value="000">Выбрать город</option>
+                            <option value="COPART NJ">COPART NJ</option>
+                            <option value="COPART CA">COPART CA</option>
+                            <option value="COPART GA">COPART GA</option>
+                            <option value="COPART TX">COPART TX</option>
+                            <option value="COPART FL">COPART FL</option>
+                            <option value="MANHEIM NJ">MANHEIM NJ</option>
+                            <option value="MANHEIM CA">MANHEIM CA</option>
+                            <option value="MANHEIM GA">MANHEIM GA</option>
+                            <option value="MANHEIM TX">MANHEIM TX</option>
+                            <option value="MANHEIM FL">MANHEIM FL</option>
+                            <option value="IAAI NJ">IAAI NJ</option>
+                            <option value="IAAI CA">IAAI CA</option>
+                            <option value="IAAI GA">IAAI GA</option>
+                            <option value="IAAI TX">IAAI TX</option>
+                            <option value="IAAI FL">IAAI FL</option>
+                        </select>
+                    </div>
                     <div class="input-container">
                         <label for="">Город</label>
-                        <select name="" id="" required>
-                            <option value=""></option>
-                            <option value="1">LA</option>
-                            <option value="2">NY</option>
-                            <option value="3">Dalas</option>
+                        <select name="" id="delivery-from-city" required>
+                            <option value="000">Выбрать город</option>
                         </select>
                     </div>
-                    <div class="input-container">
-                        <label for="">Тип</label>
-                        <select name="" id="" required>
-                            <option value=""></option>
-                            <option value="1">Легковое авто</option>
-                            <option value="2">Джип</option>
-                            <option value="3">Мотоцикл</option>
-                            <option value="4">Катер</option>
-                        </select>
-                    </div>
-                    <div class="input-container">
-                        <label for="">Стоимиость</label>
-                        <input type="text" placeholder="9 000 $" required>
-                    </div>
-                    <button class="count">Расчитать</button>
-
+                    <button class="count delivery">Расчитать</button>
                 </div>
             </div>
         </div>
