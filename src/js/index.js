@@ -1,3 +1,12 @@
+function Element(selector) {
+    return document.querySelector(selector)
+}
+
+
+var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy"
+});
+
 //---------TOP MENU WHEN SCROLL--------------//
 document.addEventListener('scroll', function () {
     var vievportHeight = window.innerHeight;
@@ -52,9 +61,11 @@ foggingOff = () => document.querySelector('.fogging').classList.remove('active')
 //-------------- close header menu --------//
 
 
-document.querySelector('.fogging').addEventListener('click', function () {
+Element('.fogging').addEventListener('click', function () {
     foggingOff();
-    document.querySelector('.navigation-panel').classList.remove('active');
+    Element('.navigation-panel').classList.remove('active');
+    Element('.delivery-container').classList.remove('_active')
+
 })
 
 document.querySelector('.hamburger').addEventListener('click', function () {
@@ -280,19 +291,18 @@ function getDestinationData(src) {
         })
 }
 
-
-function querySelector(selector) {
-    return document.querySelector(selector)
-}
-
 //-----------------delivery block-----------------//
 
-if (document.querySelector('.more-about-delivery')) {
-    document.querySelector('.more-about-delivery').addEventListener('click', () => {
-        document.querySelector('.delivery-container').classList.add('_active')
+if (Element('.more-about-delivery')) {
+    Element('.more-about-delivery').addEventListener('click', () => {
+        Element('.delivery-container').classList.add('_active')
+        Element('body').classList.add('hidden');
+        Element('.fogging').classList.add('active')
     })
 
-    document.querySelector('.close-delivery-block').addEventListener('click', () => {
-        querySelector('.delivery-container').classList.remove('_active')
+    Element('.close-delivery-block').addEventListener('click', () => {
+        Element('.delivery-container').classList.remove('_active')
+        Element('body').classList.remove('hidden');
+        foggingOff();
     })
 }

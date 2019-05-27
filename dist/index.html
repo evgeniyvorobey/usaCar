@@ -47,19 +47,19 @@
         <div class="services">
           <h2>Наши преимущества</h2>
           <div class="our-services-item">
-            <img src="img/car.svg" alt="">
+            <img class="lazy" data-src="img/car.svg" alt="">
             <p>Профессиональный подбор автомобиля</p>
           </div>
           <div class="our-services-item">
-            <img src="img/document.svg" alt="">
+            <img class="lazy" data-src="img/document.svg" alt="">
             <p>Полное сопровождение от покупки до получения украинских номеров</p>
           </div>
           <div class="our-services-item">
-            <img src="img/hand.svg" alt="">
+            <img class="lazy" data-src="img/hand.svg" alt="">
             <p>Автомобиль страхуется на всем пути следования в Украину</p>
           </div>
           <div class="our-services-item">
-            <img src="img/ship.svg" alt="">
+            <img class="lazy" data-src="img/ship.svg" alt="">
             <p>Низкие цены на транспортировку автомобиля</p>
           </div>
         </div>
@@ -208,9 +208,13 @@
         <div class="car-item">
           <div class="top-img-block">
             <span class="item-price">14,649 USD</span>
-            <img class="responsive" src="img/cars/1.jpg" alt="">
+            <img class="responsive lazy" data-src="img/cars/1.jpg" alt="">
           </div>
           <div class="description-block">
+            <p>
+              <span>Модель:</span>
+              <span>Tesla</span>
+            </p>
             <p>
               <span>Топливо:</span>
               <span>Бензин</span>
@@ -247,9 +251,13 @@
         <div class="car-item">
           <div class="top-img-block">
             <span class="item-price">42,968 USD</span>
-            <img class="responsive" src="img/cars/2.jpg" alt="">
+            <img class="responsive lazy" data-src="img/cars/2.jpg" alt="">
           </div>
           <div class="description-block">
+            <p>
+              <span>Модель:</span>
+              <span>Tesla</span>
+            </p>
             <p>
               <span>Топливо:</span>
               <span>Бензин</span>
@@ -286,9 +294,13 @@
         <div class="car-item">
           <div class="top-img-block">
             <span class="item-price">27,880 USD</span>
-            <img class="responsive" src="img/cars/3.jpg" alt="">
+            <img class="responsive lazy" data-src="img/cars/3.jpg" alt="">
           </div>
           <div class="description-block">
+            <p>
+              <span>Модель:</span>
+              <span>Tesla</span>
+            </p>
             <p>
               <span>Топливо:</span>
               <span>Бензин</span>
@@ -325,9 +337,13 @@
         <div class="car-item">
           <div class="top-img-block">
             <span class="item-price">15,880 USD</span>
-            <img class="responsive" src="img/cars/4.jpg" alt="">
+            <img class="responsive lazy" data-src="img/cars/4.jpg" alt="">
           </div>
           <div class="description-block">
+            <p>
+              <span>Модель:</span>
+              <span>Tesla</span>
+            </p>
             <p>
               <span>Топливо:</span>
               <span>Електро</span>
@@ -383,13 +399,52 @@
         </div>
       </div>
       <div class="delivery-main-info">
-        <span class="close-delivery-block">x</span>
-        <img src="https://picsum.photos/id/1002/2400/1200" alt="">
-        <img src="https://picsum.photos/id/1001/2400/1200" alt="">
-        <img src="https://picsum.photos/id/1000/2400/1200" alt="">
-        <img src="https://picsum.photos/id/1002/2400/1200" alt="">
-        <img src="https://picsum.photos/id/1001/2400/1200" alt="">
-        <img src="https://picsum.photos/id/1000/2400/1200" alt="">
+        <div class="delivery-content">
+          <div class="img-side">
+            <img class="lazy" data-src="https://picsum.photos/id/1002/2400/1200" alt="">
+          </div>
+          <div class="description-side">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nobis sunt accusantium iure recusandae vero, culpa ducimus,
+              quod odit fugit modi quo. Omnis facilis deserunt, repellat aliquam labore quisquam voluptatibus.Id odio cum, eligendi
+              necessitatibus repellat pariatur explicabo incidunt alias delectus corporis unde veniam architecto, magnam ipsum recusandae animi
+              velit voluptatibus. Rerum, maiores saepe? Numquam, similique deserunt. Nobis, laborum voluptas.
+            </p>
+          </div>
+        </div>
+        <div class="delivery-content reverse">
+          <div class="img-side">
+            <img class="lazy" data-src="https://picsum.photos/id/1001/2400/1200" alt="">
+          </div>
+          <div class="description-side">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nobis sunt accusantium iure recusandae vero, culpa ducimus,
+              quod odit fugit modi quo. Omnis facilis deserunt, repellat aliquam labore quisquam voluptatibus.Id odio cum, eligendi
+              necessitatibus repellat pariatur explicabo incidunt alias delectus corporis unde veniam architecto, magnam ipsum recusandae animi
+              velit voluptatibus. Rerum, maiores saepe? Numquam, similique deserunt. Nobis, laborum voluptas.
+            </p>
+          </div>
+        </div>
+        <div class="delivery-content">
+          <div class="img-side">
+            <img class="lazy" data-src="https://picsum.photos/id/1000/2400/1200" alt="">
+          </div>
+          <div class="description-side">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nobis sunt accusantium iure recusandae vero, culpa ducimus,
+              quod odit fugit modi quo. Omnis facilis deserunt, repellat aliquam labore quisquam voluptatibus.Id odio cum, eligendi
+              necessitatibus repellat pariatur explicabo incidunt alias delectus corporis unde veniam architecto, magnam ipsum recusandae animi
+              velit voluptatibus. Rerum, maiores saepe? Numquam, similique deserunt. Nobis, laborum voluptas.
+            </p>
+          </div>
+        </div>
+        <img class="lazy" data-src="https://picsum.photos/id/1002/2400/1200" alt="">
+        <img class="lazy" data-src="https://picsum.photos/id/1001/2400/1200" alt="">
+        <img class="lazy" data-src="https://picsum.photos/id/1000/2400/1200" alt="">
+        <img class="lazy" data-src="https://picsum.photos/id/1002/2400/1200" alt="">
+        <img class="lazy" data-src="https://picsum.photos/id/1001/2400/1200" alt="">
+        <img class="lazy" data-src="https://picsum.photos/id/1000/2400/1200" alt="">
+        <button class="close-delivery-block">x</button>
       </div>
     </div>
     <div class="center-block">
@@ -577,6 +632,7 @@
   <script src="js/additions/swiper.min.js"></script>
   <script src="js/additions/anchorCrossing.js"></script>
   <script src="js/additions/sendFromForm.js"></script>
+  <script src="js/additions/lazyload.min.js"></script>
   <script src="js/bundle.js"></script>
 </body>
 
