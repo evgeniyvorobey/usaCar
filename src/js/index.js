@@ -306,3 +306,12 @@ if (Element('.more-about-delivery')) {
         foggingOff();
     })
 }
+
+Element('.top-toggle-container').querySelectorAll('.toggle-item').forEach(item => {
+    item.addEventListener('click', function() {
+        Element('.top-toggle-container').querySelectorAll('.toggle-item').forEach(item => {
+            item.classList.remove('active')
+        })
+        this.classList.add('active')
+    })
+})
