@@ -500,6 +500,21 @@ section{
 		padding: 0;
 		margin: 0;
 		z-index: 220;
+		.close-delivery-block{
+			width: 20px;
+			height: 20px;
+			margin: 10px;
+			padding: 0;
+			background: transparent;
+			border: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+			img{
+				border: none !important;
+				box-shadow: none !important;
+			}
+		}
 		.delivery-info {
 			display: none;
 		}
@@ -577,21 +592,6 @@ section{
 		overflow: hidden;
 		width: 0;
 		height: 0;
-	}
-	.close-delivery-block{
-		width: 20px;
-		height: 20px;
-		margin: 10px;
-		padding: 0;
-		background: transparent;
-		border: none;
-		position: absolute;
-		top: 0;
-		right: 0;
-		img{
-			border: none !important;
-			box-shadow: none !important;
-		}
 	}
 	.delivery-main-info{
 		.delivery-content{
