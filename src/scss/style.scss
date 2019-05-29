@@ -553,6 +553,7 @@ section{
 				line-height: 1.5;
 				font-weight: 600;
 				color: #404040;
+				text-align: center;
 			}
 			.img-side{
 				&:after{
@@ -634,6 +635,9 @@ section{
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
+	border-top: 6px solid rgba(238,0,20,.76);
+	border-left: 6px solid rgba(238,0,20,.76);
+	border-right: 6px solid rgba(238,0,20,.76);
 	.toggle-item{
 		width: 60px;
 		height: 60px;
@@ -642,14 +646,12 @@ section{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border: 2px solid #f2f2f2;
+		border: none;
 		transition: .1s linear;
-		&:nth-child(2){
-			border-left: none;
-			border-right: none;
+		&:last-child{
+			padding: 15px;
 		}
 		&.active{
-			// border: 2px solid rgba(238,0,20,.76);
 			background: rgba(238,0,20,.76);
 			svg{
 				fill: #fff;
@@ -1026,6 +1028,7 @@ footer{
 			}
 			.description-side{
 				width: 50%;
+				text-align: left;
 			}
 		}
 	}

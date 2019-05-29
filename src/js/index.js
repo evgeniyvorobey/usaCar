@@ -159,57 +159,56 @@ function checkEl(el, min, max) {
 if (document.querySelector('.count')){
     document.querySelectorAll('.count').forEach(item => {
         item.addEventListener('click', function (e) {
-            if (item.classList.contains('delivery')){
-                var city = this.parentNode.querySelector('#delivery-from-city');
+            var city = this.parentNode.querySelector('#delivery-from-city');
 
-                isEmpty(city);
+            isEmpty(city);
 
-                if(!this.parentNode.querySelector('.not-complete')){
-                    this.closest('.calculator-block').classList.add('active');
-                    this.closest('.calculator-block').querySelector('p').innerHTML = `Стоимость доставки из аукциона ${auction} составит ${destination[city.value][state]} $`;
+            if(!this.parentNode.querySelector('.not-complete')){
+                this.closest('.calculator-block').classList.add('active');
+                this.closest('.calculator-block').querySelector('p').innerHTML = `Стоимость доставки из аукциона ${auction} составит ${destination[city.value][state]} $`;
 
-                }
             }
 
-            if (item.classList.contains('tax')){
-
-                var yearVal = checkEl(document.querySelector('#year'), 3, 5);
-                var age = (date.getFullYear() + 1) - yearVal;
-                var engineСapacityVal = checkEl(document.querySelector('#engineСapacity'), 2, 5);
-                var priceVal = checkEl(document.querySelector('#price'), 3, 9);
-                var fuelValue = parseInt(isEmpty(document.querySelector('#fuel')));
+            var yearVal = checkEl(document.querySelector('#year'), 3, 5);
+            var age = (date.getFullYear() + 1) - yearVal;
+            var engineСapacityVal = checkEl(document.querySelector('#engineСapacity'), 2, 5);
+            var priceVal = checkEl(document.querySelector('#price'), 3, 9);
+            var fuelValue = parseInt(isEmpty(document.querySelector('#fuel')));
 
 
-                if(this.parentNode.querySelector('.not-complete')){
-                    return
-                } else {
+            if(this.parentNode.querySelector('.not-complete')){
+                return
+            } else {
 
-                    this.parentNode.parentNode.classList.add('active');
+                this.parentNode.parentNode.classList.add('active');
 
-                    var usd = currenceExchange['0']['buy'];
-                    var eur = currenceExchange['1']['buy'];
-                    var currName = currenceExchange['1']['ccy'];
+                var usd = currenceExchange['0']['buy'];
+                var eur = currenceExchange['1']['buy'];
+                var currName = currenceExchange['1']['ccy'];
 
-                    priceVal = usdToEur( priceVal, usd, eur )
+                priceVal = usdToEur( priceVal, usd, eur )
 
-                    var excisePrice = parseInt(fuelValue * age * engineСapacityVal);
-                    document.querySelector('.excise').innerHTML = `${excisePrice} ${currName}`
+                var excisePrice = parseInt(fuelValue * age * engineСapacityVal);
+                document.querySelector('.excise').innerHTML = `${excisePrice} ${currName}`
 
-                    var fee = parseInt(priceVal / 10);
-                    document.querySelector('.fee').innerHTML = `${fee} ${currName}`;
+                var fee = parseInt(priceVal / 10);
+                document.querySelector('.fee').innerHTML = `${fee} ${currName}`;
 
-                    var nds = parseInt((priceVal + fee + excisePrice) * 0.2);
-                    document.querySelector('.nds').innerHTML = `${nds} ${currName}`;
+                var nds = parseInt((priceVal + fee + excisePrice) * 0.2);
+                document.querySelector('.nds').innerHTML = `${nds} ${currName}`;
 
-                    var companyTax = 700;
+                var companyTax = 700;
 
-                    var deliveryFromUSA = 1000;
+                var deliveryFromUSA = 1000;
+
+                var selectedItemType = '';
+
+                console.log(selectedItemType)
 
 
 
-                    document.querySelector('.all-fee').innerHTML = `${excisePrice + fee + nds} ${currName}`;
+                document.querySelector('.all-fee').innerHTML = `${excisePrice + fee + nds} ${currName}`;
 
-                }
             }
 
         })
@@ -312,6 +311,10 @@ Element('.top-toggle-container').querySelectorAll('.toggle-item').forEach(item =
         Element('.top-toggle-container').querySelectorAll('.toggle-item').forEach(item => {
             item.classList.remove('active')
         })
-        this.classList.add('active')
+        this.classList.add('active');
+        var value = this.getAttribute('data-value');
+
+        selectedItemType = value;
+        console.log(value)
     })
 })
