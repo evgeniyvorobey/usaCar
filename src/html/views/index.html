@@ -512,8 +512,6 @@
                         <span class="fee"></span>
                     </p>
                     <p>
-                        <span>НДС</span>
-                        <span class="nds"></span>
                     </p>
                     <p>
                         <span>Общая сумма</span>
@@ -521,7 +519,7 @@
                     </p>
                     <button class="agree">Ok</button>
                 </div>
-                <div class="form " >
+                <div>
                     <div class="input-container">
                         <label for="year">Год</label>
                         <input if-false="Заполните поле" id="year" type="number" placeholder="Например 2016" required>
@@ -540,7 +538,6 @@
                             <option value="000"></option>
                             <option value="50">Бензин</option>
                             <option value="75">Дизель</option>
-                            <option value=0>Электро</option>
                         </select>
                     </div>
                     <!-- <button class="count tax">Расчитать</button> -->
@@ -586,7 +583,50 @@
                         <button class="count delivery">Расчитать</button>
                     </div>
             </div>
+            <div class="invoice">
+                <p class="description">
+                    <span>Стоимость авто в США:</span>
+                    <span class="car_price"></span>
+                </p>
+                <p class="description">
+                    <span>Аукционный сбор:</span>
+                    <span class="auction_fee"></span>
+                </p>
+                <p class="description">
+                    <span>Сухопутная доставка до порта в США:</span>
+                    <span class="land_delivery"></span>
+                </p>
+                <p class="description">
+                    <span>Морская доставка в порт «Одесса»:</span>
+                    <span class="ocean_delivery">1000 $</span>
+                </p>
+                <p class="description">
+                    <span>Экспедирование и подготовка документов к таможенной очистке:</span>
+                    <span class="preparation_of_documents">1000 $</span>
+                </p>
+                <p class="description">
+                    <span>Пошлина:</span>
+                    <span class="duty"></span>
+                </p>
+                <p class="description">
+                    <span>Ндс:</span>
+                    <span class="nds"></span>
+                </p>
+                <p class="description">
+                    <span>Стоимость услуг компании:</span>
+                    <span class="cost_of_services">700 $</span>
+                </p>
+                <p class="description">
+                    <span>Доставка по Украине:</span>
+                    <span class="ukraine_delivery">300 $</span>
+                </p>
+                <p class="description description_total">
+                    <span>Итого:</span>
+                    <span class="total"></span>
+                </p>
+            </div>
         </div>
+        
     </div>
     <div class="callback-container background-lite-gray" id="contacts">
         <div class="center-block contacts">
@@ -598,7 +638,7 @@
                     <li class="item">тел: <a href="tel:380984440277">Тел: 38 (098) 444 02 77</a></li>
                     <li class="empty"></li>
                     <li class="label">Пишите нам:</li>
-                    <li class="item">E-mail: <a href="info@bruchka.com">example@mail.com</a></li>
+                    <li class="item">E-mail: <a href="info@bruchka.com">info@bruchka.com</a></li>
                     <li class="item">
                         <a href="https://www.instagram.com/bruchka.usa/" class="socia-logo"><svg class=""><use xlink:href="#instagram" /></svg></a>
                         <a href="https://www.facebook.com/bruchka.usa/" class="socia-logo"><svg class=""><use xlink:href="#facebook" /></svg></a>

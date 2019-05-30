@@ -1,8 +1,3 @@
-function Element(selector) {
-    return document.querySelector(selector)
-}
-
-
 var myLazyLoad = new LazyLoad({
     elements_selector: ".lazy"
 });
@@ -104,125 +99,6 @@ document.querySelectorAll('.questions').forEach(item => {
 })
 
 
-function isEmpty(el) {
-    var val = el.value;
-    if (val === '000') {
-        el.classList.add('not-complete')
-        el.style.border = '1px solid rgba(238,0,20,.76)';
-    } else {
-        el.classList.remove('not-complete')
-        el.style.border = '';
-        return val;
-    }
-}
-
-
-//---------CURRENCY PRIVATBANK---------//
-var currenceExchange = [];
-
-fetch('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')
-    .then(response => {
-
-        response.json().then(function(data) {
-            data.map( item => {
-                currenceExchange.push(item)
-            })
-        });
-    })
-
-//-----END----CURRENCY PRIVATBANK---------//
-
-var date = new Date;
-
-//---------TO NUMBER---------//
-function number(el) {
-    return parseFloat(el)
-}
-//----END-----TO NUMBER---------//
-
-
-function usdToEur( money, usd, eur ) {
-    return money * usd / eur;
-}
-
-function checkEl(el, min, max) {
-    if (el.value.length > min && el.value.length < max ){
-        el.classList.remove('not-complete');
-        el.style.border = '1px solid transparent';
-        return number(el.value)
-    } else {
-        el.classList.add('not-complete')
-        el.style.border = '1px solid rgba(238,0,20,.76)';
-    }
-}
-
-if (document.querySelector('.count')){
-    document.querySelectorAll('.count').forEach(item => {
-        item.addEventListener('click', function (e) {
-            var city = this.parentNode.querySelector('#delivery-from-city');
-
-            isEmpty(city);
-
-            if(!this.parentNode.querySelector('.not-complete')){
-                this.closest('.calculator-block').classList.add('active');
-                this.closest('.calculator-block').querySelector('p').innerHTML = `Стоимость доставки из аукциона ${auction} составит ${destination[city.value][state]} $`;
-
-            }
-
-            var yearVal = checkEl(document.querySelector('#year'), 3, 5);
-            var age = (date.getFullYear() + 1) - yearVal;
-            var engineСapacityVal = checkEl(document.querySelector('#engineСapacity'), 2, 5);
-            var priceVal = checkEl(document.querySelector('#price'), 3, 9);
-            var fuelValue = parseInt(isEmpty(document.querySelector('#fuel')));
-
-
-            if(this.parentNode.querySelector('.not-complete')){
-                return
-            } else {
-
-                this.parentNode.parentNode.classList.add('active');
-
-                var usd = currenceExchange['0']['buy'];
-                var eur = currenceExchange['1']['buy'];
-                var currName = currenceExchange['1']['ccy'];
-
-                priceVal = usdToEur( priceVal, usd, eur )
-
-                var excisePrice = parseInt(fuelValue * age * engineСapacityVal);
-                document.querySelector('.excise').innerHTML = `${excisePrice} ${currName}`
-
-                var fee = parseInt(priceVal / 10);
-                document.querySelector('.fee').innerHTML = `${fee} ${currName}`;
-
-                var nds = parseInt((priceVal + fee + excisePrice) * 0.2);
-                document.querySelector('.nds').innerHTML = `${nds} ${currName}`;
-
-                var companyTax = 700;
-
-                var deliveryFromUSA = 1000;
-
-                var selectedItemType = '';
-
-                console.log(selectedItemType)
-
-
-
-                document.querySelector('.all-fee').innerHTML = `${excisePrice + fee + nds} ${currName}`;
-
-            }
-
-        })
-    })
-
-    document.querySelectorAll('.agree').forEach(item => {
-        item.addEventListener('click', function () {
-            this.parentNode.parentNode.classList.remove('active');
-        })
-    })
-}
-
-
-
 
 if (document.querySelector('.status-delivery')){
     var progressLine;
@@ -240,12 +116,6 @@ if (document.querySelector('.status-delivery')){
         item.querySelector('.progress-bar').style.width = `${progressLine}%`
     })
 }
-
-
-var destination = [];
-var state;
-var auction;
-var citySelect = document.querySelector('#delivery-from-city');
 
 
 
@@ -305,16 +175,3 @@ if (Element('.more-about-delivery')) {
         foggingOff();
     })
 }
-
-Element('.top-toggle-container').querySelectorAll('.toggle-item').forEach(item => {
-    item.addEventListener('click', function() {
-        Element('.top-toggle-container').querySelectorAll('.toggle-item').forEach(item => {
-            item.classList.remove('active')
-        })
-        this.classList.add('active');
-        var value = this.getAttribute('data-value');
-
-        selectedItemType = value;
-        console.log(value)
-    })
-})

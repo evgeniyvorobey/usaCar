@@ -348,8 +348,8 @@ section{
 	}
 	h3{
 		text-align: center;
-		padding: 20px;
-		margin: 30px 0;
+		padding: 0 0 20px;
+		margin: 0;
 	}
 	h4{
 		text-align: center;
@@ -611,8 +611,8 @@ section{
 }
 
 .calculator-block{
-	margin: 0 15px;
 	padding: 40px 15px;
+	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
 	button{
@@ -630,6 +630,36 @@ section{
 		}
 	}
 
+}
+.invoice{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 15px;
+	overflow: hidden;
+	height: 0;
+	transition: .2s linear;
+	color: #4c4c4c;
+	border-top: 6px solid transparent;
+	&.active{
+		height: auto;
+		padding: 40px 15px;
+		border-top: 6px solid rgba(238,0,20,.76);
+	}
+	.description{
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #afafaf;
+		padding: 10px 0;
+		margin: 0;
+		&.description_total{
+			padding-top: 10px;
+			border-top: 2px solid #4c4c4c;
+			border-bottom: none;
+		}
+		span:last-child{
+			width: 80px;
+		} 
+	}
 }
 .top-toggle-container{
 	display: flex;
@@ -886,13 +916,14 @@ footer{
 .status-name{
 	width: 70px;
 	display: block;
-	transform: translateY(30px);
+	transform: translateY(30px) translateX(-10%);
+	font-size: 13px;
 }
 .status-item:nth-child(3) .status-name{
-	transform: translateY(30px) translateX(-25px);
+	transform: translateY(30px) translateX(-20px);
 }
 .status-item:nth-child(4) .status-name{
-	transform: translateY(30px) translateX(-100%);
+	transform: translateY(30px) translateX(-59%);
 }
 
 #disqus_thread{
@@ -983,6 +1014,7 @@ footer{
 	.wrapper-for-calculator, .delivery{
 		margin: 0 0 70px 0;
 		display: flex;
+		flex-wrap: wrap;
 	}
 	.info-block{
 		padding: 15px 40px;

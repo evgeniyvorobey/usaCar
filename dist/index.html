@@ -547,8 +547,6 @@
               <span class="fee"></span>
             </p>
             <p>
-              <span>НДС</span>
-              <span class="nds"></span>
             </p>
             <p>
               <span>Общая сумма</span>
@@ -556,7 +554,7 @@
             </p>
             <button class="agree">Ok</button>
           </div>
-          <div class="form ">
+          <div>
             <div class="input-container">
               <label for="year">Год</label>
               <input if-false="Заполните поле" id="year" type="number" placeholder="Например 2016" required>
@@ -575,7 +573,6 @@
                 <option value="000"></option>
                 <option value="50">Бензин</option>
                 <option value="75">Дизель</option>
-                <option value=0>Электро</option>
               </select>
             </div>
             <!-- <button class="count tax">Расчитать</button> -->
@@ -621,7 +618,50 @@
             <button class="count delivery">Расчитать</button>
           </div>
         </div>
+        <div class="invoice">
+          <p class="description">
+            <span>Стоимость авто в США:</span>
+            <span class="car_price"></span>
+          </p>
+          <p class="description">
+            <span>Аукционный сбор:</span>
+            <span class="auction_fee"></span>
+          </p>
+          <p class="description">
+            <span>Сухопутная доставка до порта в США:</span>
+            <span class="land_delivery"></span>
+          </p>
+          <p class="description">
+            <span>Морская доставка в порт «Одесса»:</span>
+            <span class="ocean_delivery">1000 $</span>
+          </p>
+          <p class="description">
+            <span>Экспедирование и подготовка документов к таможенной очистке:</span>
+            <span class="preparation_of_documents">1000 $</span>
+          </p>
+          <p class="description">
+            <span>Пошлина:</span>
+            <span class="duty"></span>
+          </p>
+          <p class="description">
+            <span>Ндс:</span>
+            <span class="nds"></span>
+          </p>
+          <p class="description">
+            <span>Стоимость услуг компании:</span>
+            <span class="cost_of_services">700 $</span>
+          </p>
+          <p class="description">
+            <span>Доставка по Украине:</span>
+            <span class="ukraine_delivery">300 $</span>
+          </p>
+          <p class="description description_total">
+            <span>Итого:</span>
+            <span class="total"></span>
+          </p>
+        </div>
       </div>
+
     </div>
     <div class="callback-container background-lite-gray" id="contacts">
       <div class="center-block contacts">
@@ -633,7 +673,7 @@
             <li class="item">тел: <a href="tel:380984440277">Тел: 38 (098) 444 02 77</a></li>
             <li class="empty"></li>
             <li class="label">Пишите нам:</li>
-            <li class="item">E-mail: <a href="info@bruchka.com">example@mail.com</a></li>
+            <li class="item">E-mail: <a href="info@bruchka.com">info@bruchka.com</a></li>
             <li class="item">
               <a href="https://www.instagram.com/bruchka.usa/" class="socia-logo"><svg class="">
                   <use xlink:href="#instagram" /></svg></a>
@@ -721,31 +761,33 @@
     </symbol>
   </svg>
 
-  <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document,
-        s = d.createElement('script');
-      s.src = 'https://usacar.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <!-- <script>
 
-  <script id="dsq-count-scr" src="//usacar.disqus.com/count.js" async></script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://usacar.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                     -->
+  <!-- <script id="dsq-count-scr" src="//usacar.disqus.com/count.js" async></script> -->
   <script src="js/additions/swiper.min.js"></script>
   <script src="js/additions/anchorCrossing.js"></script>
   <script src="js/additions/sendFromForm.js"></script>
   <script src="js/additions/lazyload.min.js"></script>
+  <script src="js/additions/calculator.js"></script>
+
   <script src="js/bundle.js"></script>
 </body>
 
