@@ -128,7 +128,7 @@ if (document.querySelector('#delivery-from-auction')){
 
         citySelect.innerHTML = '<option value="000"></option>'
         destination = []
-        getDestinationData(`../json/${auction.toLowerCase()}.json`)
+        getDestinationData(`./json/${auction.toLowerCase()}.json`)
 
     })
 }
