@@ -38,17 +38,15 @@ function isEmpty(el) {
     }
 }
 
-
 //-------AUCTION FEE---------//
 var auction_fee = [];
-fetch('./../json/auctionFee.json')
+fetch('../../json/auctionFee.json')
     .then(response => {
         response.json().then(function(data) {
             data.map(function(item) {
                 auction_fee.push(item)
             })
         });
-
     })
 
 
@@ -119,6 +117,12 @@ document.querySelector('.count').addEventListener('click', function (e) {
 
 
         if(!Element('.wrapper-for-calculator').querySelector('.not-complete')){
+            
+            var companyTax = 700;
+            var deliveryFromUSA = 1000;
+            var preparation_of_documents = 1000;
+            var ukraineDelivery = 300;
+            var auctionFromFee;
             var yearVal = checkEl(document.querySelector('#year'), 3, 5);
             var age = (date.getFullYear() + 1) - yearVal;
             var engineСapacityVal = checkEl(document.querySelector('#engineСapacity'), 2, 5);
@@ -134,21 +138,21 @@ document.querySelector('.count').addEventListener('click', function (e) {
             var nds = parseInt((priceVal + fee + excisePrice) * 0.2);
             document.querySelector('.nds').innerHTML = `${nds}  `;
 
-            var companyTax = 700;
-            var deliveryFromUSA = 1000;
-            var preparation_of_documents = 1000;
-            var ukraineDelivery = 300;
+
+            auction_fee.map(price => {
+                if (priceVal >= parseFloat(price.min) && priceVal <= parseFloat(price.max) ){
+                    auctionFromFee = price.fee;
+                }
+            })
 
             Element('.car_price').innerHTML = `${priceVal} $`;
+            Element('.auction_fee').innerHTML = `${auctionFromFee} $`
             Element('.duty').innerHTML = `${fee} $`;
             Element('.fee').innerHTML = `${nds} $`;
             Element('.land_delivery').innerHTML = `${destination[city.value][state]} $`;
-            Element('.total').innerHTML = `${priceVal + fee + nds + parseInt(destination[city.value][state]) + 
+            Element('.total').innerHTML = `${priceVal + auctionFromFee + fee + nds + parseInt(destination[city.value][state]) + 
                 companyTax + deliveryFromUSA + preparation_of_documents + ukraineDelivery}`;
 
-            // auction_fee.map(value => {
-            //     console.log(value)
-            // })
 
             Element('.invoice').classList.add('active');
 

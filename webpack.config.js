@@ -100,9 +100,9 @@ module.exports = {
             filename: "./css/style.css"
         }),
         new CopyWebpackPlugin([{
-            from: './src/fonts',
-            to: './fonts'
-        },
+                from: './src/fonts',
+                to: './fonts'
+            },
             {
                 from: './src/scss/additions',
                 to: './css'

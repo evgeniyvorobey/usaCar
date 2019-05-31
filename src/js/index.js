@@ -56,7 +56,7 @@ foggingOff = () => document.querySelector('.fogging').classList.remove('active')
 //-------------- close header menu --------//
 
 
-Element('.fogging').addEventListener('click', function () {
+document.querySelector('.fogging').addEventListener('click', function () {
     foggingOff();
     Element('.navigation-panel').classList.remove('active');
     Element('.delivery-container').classList.remove('_active')
@@ -128,7 +128,7 @@ if (document.querySelector('#delivery-from-auction')){
 
         citySelect.innerHTML = '<option value="000"></option>'
         destination = []
-        getDestinationData(`./json/${auction.toLowerCase()}.json`)
+        getDestinationData(`./../json/${auction.toLowerCase()}.json`)
 
     })
 }
@@ -175,3 +175,16 @@ if (Element('.more-about-delivery')) {
         foggingOff();
     })
 }
+
+// //-------AUCTION FEE---------//
+// var auction_fee = [];
+// fetch('../../json/auctionFee.json')
+//     .then(response => {
+//         response.json().then(function(data) {
+//             data.map(function(item) {
+//                 auction_fee.push(item)
+//             })
+//         });
+//         console.log(auction_fee)
+
+//     })
