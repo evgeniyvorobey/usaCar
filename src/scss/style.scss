@@ -158,8 +158,9 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url(../img/top-main.jpg);
-	background-size: cover;
+	.swiper-button-next, .swiper-button-prev{
+		display: none;
+	}
 	h2{
 		color: #fff;
 		font-weight: bold;
@@ -213,6 +214,7 @@ main{
 
 
 .swiper-slide{
+	background-position: center !important;
 	&:nth-child(1){
 		background: url(../img/slider-1.jpg) no-repeat;
 	}
@@ -960,6 +962,9 @@ footer{
 	  }
 	.swiper-container{
 		height: 350px;
+		.swiper-button-next, .swiper-button-prev{
+			display: block;
+		}
 	}
 	.wrapper{
 		flex-direction: row;
@@ -1096,8 +1101,8 @@ footer{
 	border-radius: 50%;
 	box-sizing: border-box;
 	position: fixed;
-	bottom: 40px;
-	right: 40px;
+    bottom: 110px;
+    right: 20px;
 	background: #ee001483;
 	transition: .05s linear;
 	opacity: 0;
@@ -1111,4 +1116,11 @@ footer{
 	&.active{
 		opacity: 1;
 	}
+}
+@media(min-width:460px) {
+	.to-top-button{
+		bottom: 40px;
+		right: 40px;
+	}
+
 }

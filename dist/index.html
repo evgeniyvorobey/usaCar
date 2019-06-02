@@ -36,12 +36,19 @@
 
 
   <main>
-    <div class="swiper-container animated-bg">
-      <h2 class="welcome-phrase">Сопровождение авто от покупки до оформления!</h2>
+    <!-- <div class="swiper-container animated-bg">
+        <h2 class="welcome-phrase">Сопровождение авто от покупки до оформления!</h2>
+    </div> -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <div class="about-us-container center-block">
-      <h2>Покупка и доставка автомобиля из США – это легко и просто. Многие жители Украины, несмотря на насыщенность автомобильного рынка, предпочитают приобретать машины из США. Авто из Америки пользуются большим спросом в СНГ. Поэтому мы предоставляет Вам возможность приобрести автомобиль с аукционов США на выгодных условиях. Звоните и мы Вам сможем помочь!</h2>
-    </div>
+    <div class="about-us-container center-block"></div>
     <div class="wrapper center-block">
       <section>
         <div class="services">
@@ -761,27 +768,40 @@
     </symbol>
   </svg>
 
-  <!-- <script>
+  <script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://usacar.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                     -->
-  <!-- <script id="dsq-count-scr" src="//usacar.disqus.com/count.js" async></script> -->
+    // var disqus_config = function () {
+    // this.page.url = 'https://bruchka.com';  // Replace PAGE_URL with your page's canonical URL variable
+    // this.page.identifier = 'mainPage'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    // };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement('script');
+      s.src = 'https://usacar.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <script type="text/javascript">
+    var ZCallbackWidgetLinkId = '54c11ec9bb31c012d1c7f19fc11d08ab';
+    var ZCallbackWidgetDomain = 'my.zadarma.com';
+    (function() {
+      var lt = document.createElement('script');
+      lt.type = 'text/javascript';
+      lt.charset = 'utf-8';
+      lt.async = true;
+      lt.src = 'https://' + ZCallbackWidgetDomain + '/callbackWidget/js/main.min.js';
+      var sc = document.getElementsByTagName('script')[0];
+      if (sc) sc.parentNode.insertBefore(lt, sc);
+      else document.documentElement.firstChild.appendChild(lt);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <script id="dsq-count-scr" src="//usacar.disqus.com/count.js" async></script>
   <script src="js/additions/swiper.min.js"></script>
   <script src="js/additions/anchorCrossing.js"></script>
   <script src="js/additions/sendFromForm.js"></script>
